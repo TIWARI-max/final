@@ -1,0 +1,43 @@
+name: Deploy website
+
+on:
+  push:
+    branches: [main, master]
+    paths-ignore:
+      - 'worker/**'
+      - 'README.txt'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Insert push settings
+        env:
+          OS_APP_ID: ${{ secrets.ONESIGNAL_APP_ID }}
+          PUSH_ENDPOINT: ${{ secrets.PUSH_ENDPOINT }}
+        run: |
+          sed -i "s|__ONESIGNAL_APP_ID__|$OS_APP_ID|g; s|__PUSH_ENDPOINT__|$PUSH_ENDPOINT|g" www/index.html
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: www
+
+      - id: deployment
+        uses: actions/deploy-pages@v4

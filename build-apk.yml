@@ -1,0 +1,57 @@
+name: Build APK
+
+on:
+  push:
+    branches: [main, master]
+    paths-ignore:
+      - 'worker/**'
+      - 'README.txt'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Add Android platform
+        run: npx cap add android
+
+      - name: Add permissions (notifications, mic, camera)
+        run: |
+          M=android/app/src/main/AndroidManifest.xml
+          sed -i '/<application/i \    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />\n    <uses-permission android:name="android.permission.RECORD_AUDIO" />\n    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />\n    <uses-permission android:name="android.permission.CAMERA" />\n    <uses-permission android:name="android.permission.VIBRATE" />' $M
+
+      - name: Insert push settings
+        env:
+          OS_APP_ID: ${{ secrets.ONESIGNAL_APP_ID }}
+          PUSH_ENDPOINT: ${{ secrets.PUSH_ENDPOINT }}
+        run: |
+          sed -i "s|__ONESIGNAL_APP_ID__|$OS_APP_ID|g; s|__PUSH_ENDPOINT__|$PUSH_ENDPOINT|g" www/index.html
+
+      - name: Sync web files
+        run: npx cap sync android
+
+      - name: Build debug APK
+        working-directory: android
+        run: |
+          chmod +x gradlew
+          ./gradlew assembleDebug
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: MYChat-apk
+          path: android/app/build/outputs/apk/debug/app-debug.apk

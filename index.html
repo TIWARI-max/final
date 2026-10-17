@@ -1,0 +1,2353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, interactive-widget=resizes-content">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#4A44D4">
+<link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogIk1ZQ2hhdCBcdTIwMTQgUm9vbS1CYXNlZCBNZXNzZW5nZXIiLCAic2hvcnRfbmFtZSI6ICJNWUNoYXQiLCAiZGVzY3JpcHRpb24iOiAiUmVhbHRpbWUgcm9vbS1iYXNlZCBjaGF0IG1lc3NlbmdlciIsICJzdGFydF91cmwiOiAiLiIsICJzY29wZSI6ICIuIiwgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIsICJvcmllbnRhdGlvbiI6ICJwb3J0cmFpdCIsICJiYWNrZ3JvdW5kX2NvbG9yIjogIiM0QTQ0RDQiLCAidGhlbWVfY29sb3IiOiAiIzRBNDRENCIsICJpY29ucyI6IFt7InNyYyI6ICJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQU1BQUFBREFDQVlBQUFCUzNHd0hBQUFHS0VsRVFWUjRuTzNkdlpMY1JCVEY4ZGFVM29HRkRGS2Vnd2pLdS9OaGtsMGlxbmd4WnBab0N5ZEVmZzVIWUh2SklPUUpSREFsMSt4NFB2UngxYTE3ei8vblVvQnJhNUNsYzZaYnJkRnM5Zk12LzZXWmFVcnZBQ1pYbGQ2QlZ0MDBSZk5HMkRXZE91OUZTbEVYK0g4U2VweHltSXRzWmNoWkFJS1BydHFzVEY2RUhBVWcrQmhxOGlKTVdRQ0NEeXVURmFHZUlLWUVIMU14TDBKdG5GZkNqeHlhWkZTQzJpaXhCQis1bVl3R0M4TWRBVW9ZbGIreEJTRDhtSVBCT1J4VEFNS1BPUm1VeDZHclFJUWZjOVQ3NG5qSUNFRDRNV2U5OHRsM0daVHd3NFBPSTBHZkVZRHd3NU5PZWUxNkg0RHd3Nk9ySTBHWGkyRENEODh1bHNEaVJoamcxclVDOE82UENNN20rTklxRU9GSEpDZW5Ra3lCSU8xY0FYajNSMFNmNVhxS0IySUFOMDdkQjZBU2lPekZ0UURYQUpCMlhBRGUvYUhnVTg2dG53a0dYRGtjQVdnQ2xEUXBzUW9FY1Z3RVExcTdETW80QUVVTkl3Q2tVUUJJcTFQWlg1QUJGTVVJQUdtTHhBVXdoREVDUUJvRmdEU3JyMGNIWEdJVkNOS1lBa0VhQllBMENnQnBGQURTS0FDazhVQU1wTlVORFlBd3BrQ1FSZ0VnalFKQUdoZkJrTVlJQUdsOE14eWs4WEhvQTl0ZnZ5aTlDOWs4L1BSdjZWMlloZXIrNFIvWkRpZ0YvaHJWUWtnV2dPQ2ZwMWFFNnY1ZXB3RGJMY0h2NnVGQm93Z1NCU0Q0dzBVdlF2aGxVTUkvVHZUanQ5Z3ZnOGJjb3ArOFhQYkhzZno1bkdJTE93SnN0emVsZHlHVXFNZHpVYjZEOWx2VWsxWGFkbnRUL054YWI0dmllMkM4N1FqL3BIYmJtK0xuMkhJTE5RWGE3UWgvRHBHT2M1Z0NSRG9wSGtRNTNtRUtBQXdSWWhrMHlydVJOL3ZqWHY3OGo5bDRJQWJqT00rUCt5blE3dkhMMHJzZ3pmdng1M2tBak9ZNVE2NUhnRWZuN3o1UmVENFByZ3NBak1VendURGlNMGVzQXNHRzB4eTVuUUk5L3ZaVjZWM0FBYS9udzIwQkFBc3NnOEtNeHl3eEFrQWFCWUEwZms4dzdEak1FaU1BcEZFQVNLTUFrRVlCSUsxMmVOMVMxUGZmdlh2eDMzKzgvVGJFNjFqd21LVzY5QTU0Y1J5MDQ3L3ZHcnk1dlk0Nng4OEU1M011Yk41L3hsN3BUUFRmdUFhNG9rK1FMdjNzM0Y0SGV4UUEwaWdBcFBGQURPdzR6QklqQUtRdG11VHpUeTU5bGhNdi9lemNYbWNLcFRNeDVBOGpRQWRkZ3VUeFo4Q05zTTdhUUkyOTh6cTMxMUZIQVhxeUN0amNYa2NWcTBDdzR6QkxYQU5BR2dXQXREcm5raUppODVnbFJnQkk0eUlZZGh4bWlSRUEwaWdBcEZFQVNIUDdTT1NQbTc4bk9TQVlabjgreXVlQ1J5S0JIdmhhRkpqd21pTkdBRWh6WFlEWGE2NEQ1c0R6ZVhCZEFHQXM5d1h3L080VGdmZmp6eS9Jd0RqTzgrTitCRWdwcGRlcjU5SzdJQ25DY1E5UkFPUVhJZndwcGJRb2Z5L09adHNFT1NGZWxEN2ZWbHVvRVlBUzVCSHBPSWNxUUVxeFRzNGNSVHUraStKajBBVGJadmxzZXBDd3QxaytGeiszMXB2YlQ0TmUyemJMajJkUEpQcmJIOC95NTlWNkN6Y0ZPa1FKYkVRK2pxRUxrRkxza3plMXpmSmorT05YcmU0K05LVjNJcGVuMzc4dXZRdHVySU1IdnlWVmdCWkZPRThsK0sxcWRhdFhnTmJURzRyUVd0OXBCYjlWclc3Znl4YmcyTk9iYjBydlFqYnJ1dytsZDJFV0tNQVJpeElRTGovQ3J3TGxSdmg5b1FDR0NMOC9mRGVva2ZVdDRmZW9Kdi9qclFpL1cweUJSaUw4dnRXSk9kQWdxOXYzcFhjQkJoZ0JCaUQ4Y1ZDQW5naC9MS3dDOWJCNlJmaWpZUVRvaVBESFJBRTZJUHh4Y1IvZ2dpWEJENDlsMERPV3IvNHF2UXZJZ0NuUUNZUmZSM1gzdzU4TUFaREZDQUJwRkFEU0tBQ2sxUTJyUUJER1J5RWdqU2tRcEZFQVNLTUFrRVlCSUkwQ1FCcS9KeGpTK0RnMHBERUZnalFLQUdtTGxGSlZlaWVBVWhnQklJMVZJRWhqQklBMENnQnA3WDJBS3ZIMUVOQlRNUUpBR2cvRVFOcmhDTUQ5QUNpcFV1S2I0U0R1K0JxQVVRQUtQdVdjaTJCSU8vVnhhSlpFRWRtTFdRNnJRSkIyYmdyRXRRQWkraXpYWEFOQTJxVmxVSzRGRU1uSldjMjFFWUNwRUNJNG0yT21RSkRXWlJXSXFSQTh1emlMNmZxMUtKUUFIbDJkd3ZlWkFuRTlBRTg2NWJYdmgrRVlDZUJCNXpmcklSZkJqQVNZczE3NUhQcFJDRVlDekZIdk4rY3h5NkNNQkppVFFYa2NleCtBRW1BT0J1ZlE0a1lZSlVCSm8vSm45ZlhvN1U1d1hZQmNUTjU0clo4SjV1SVlPWmpOT3FaNElJYlJBRk14bjI3WDFpOTRnQ0xBeW1UWG1WTVdvRVVSTU5Ua0N5dzVDdENpQ09ncTI4cGl6Z0swRHY5eGxBR3RJc3ZwL3dQQ05MWDh6bEN4aFFBQUFBQkpSVTVFcmtKZ2dnPT0iLCAic2l6ZXMiOiAiMTkyeDE5MiIsICJ0eXBlIjogImltYWdlL3BuZyIsICJwdXJwb3NlIjogImFueSJ9LCB7InNyYyI6ICJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQWdBQUFBSUFDQVlBQUFEMGVOVDZBQUFSRmtsRVFWUjRuTzNkdjVJajEzMEY0QXRXdjROb0o1YWQramtjdVN4eWQ1WUtPT3ZJVlg0eHpkSlZGbWtwY2VUbmNHYUp0QlBKb1o5Z0hKRGdEckFEb0FGMDkvMXp2cTlxSTFFemwrQjJuOU8vMitqZS9kTS8vMStoU2MrMUZ3Q3dvRjN0QlhCb2VuNldNNVg0NElFa2w4NTVDc0xHcHRvTENDSHNBYzU3N1R5cEZLeElBVmlId0FlNDMvRzVWQ0ZZa0FLd0RJRVBzRDZGWUVFS3dPMkVQa0JkTDgvRHlzQ1ZGSURyQ0gyQU5pa0RWMUlBTGhQNkFIMVJCbVpRQUU0VC9BRDkyNS9MRllFakNzQWhvUTh3SmxPQkl3ckFqd1EvUUE1VGdhSUFDSDZBWE5GRklMVUFDSDRBOWlLTFFGb0JFUHdBbkJKVkJGSUtnT0FIWUs2SUl2Qlo3UVZzUVBnRGNJdWg4Mk1hK0Y5djNIOHpBTFl5N0RSZ3hDMEF3US9BMG9ZckF0TmdlVG5Vdnd3QXpYa3VnNVNBVVNZQWdoK0FyUXd4RFJqaEprRGhEMEFOWGVmUDFQWHFPLy93QWVoZXQxc0N2VzRCQ0g0QVd0SGxsa0NQV3dEQ0g0QVdkWlZQdlJXQXJqNWNBT0owazFPOWJBRjA4NEVDRUsrTExZRWVKZ0RDSDRBZU5aMWZyUmVBcGo4OEFMaWcyUnhydVFBMCs2RUJ3QldhekxOV0MwQ1RIeFlBM0tpNVhHdXhBRFQzSVFIQUFwckt0OVplQjl6V2FnQmdXYzA4T2JDbENZRHdCeUJCRTNuWFNnRm80c01BZ0kxVXo3MFdDa0QxRHdFQUtxaWFmN1VMZ1BBSElGbTFISndxL203aER3Q1ZiZ3lzTlFFUS9nRHcwZWE1V0tNQUNIOEErTlNtK2JoMUFSRCtBSERhWmptNVpRRVEvZ0J3MlNaNU9XMlV5c0lmQU9aYi9jYkEybDhEQkFBcTJLSUF1UG9IZ091dG1wOXJGd0RoRHdDM1d5MUgxeXdBd2g4QTdyZEtucmIyT21BQVlBTnJUUURVQ2dCWXp1SzV1a1lCRVA0QXNMeEY4M1hwQWlEOEFXQTlpK1dzNXdBQVFLQWxDNENyZndCWTN5SjV1MVFCRVA0QXNKMjdjM2VTM1FDUVo0a0pnQVlCQU51N0szL2RCQWdBZ2U0dEFLNytBYUNlbTNQNG5nSWcvQUdndnB2eTJCWUFBQVM2dFFDNCtnZUFkbHlkeXlZQUFCRG9sdGNCdS9vSGdQWThsMUoyYy8vaFNab0RRSjVydHdEMEJRQm8xK3ljZGc4QUFBUzZwZ0M0K2dlQTlzM0theE1BQUFnMHR3QzQrZ2VBZmx6TWJSTUFBQWlrQUFCQW9Ea0Z3UGdmQVBwek5yOG4rUTRBZVM1TkFMUURBT2pYeVJ4M0R3QUFCRklBQUNEUXVRSmcvQThBL1hzMXoyOTVIVEFBMERsYkFBQVE2RlFCTUJjQWdIRjhrdXNtQUFBUVNBRUFnRUN2RlFEamZ3QVl6MEcrVDlJZUFQTFlBZ0NBUUFvQUFBUTZMZ0IyQkFCZ1hEL252QWtBQUFSU0FBQWdrQUlBQUlHbUY5c0I5djhCWUh6UHBaU2RDUUFBQlBJNllBQUlaQUlBQUlFVUFBQUl0QzhBTmdJQUlNZXpDUUFBQkZJQUFDQ1FBZ0FBZ1JRQUFBaWtBQUJBSUFVQUFBSXBBQUFRNkxQaUdRQUFFR2VTL2dDUXh4WUFBQVJTQUFBZzBGU2ViUUlBUUJvVEFBQUlwQUFBUUNBRkFBQUNLUUFBRUVnQkFJQkFDZ0FBQkZJQUFDQ1FBZ0FBZ1JRQUFBaWtBQUJBSUFVQUFBSXBBQUFRU0FFQWdFQUtBQUFFbW9xM0FRTkFIQk1BQUFnMEdRQUFRSjZwMkFNQWdEaTJBQUFna0FJQUFJRVVBQUFJcEFBQVFDQUZBQUFDS1FBQUVFZ0JBSUJBQ2dBQUJGSUFBQ0NRQWdBQWdSUUFBQWprZGNBQUVNZ0VBQUFDS1FBQUVFZ0JBSUJBQ2dBQUJGSUFBQ0RRVkh3TkFBRGltQUFBUUtESjlUOEE1SmxxTHdEVzhQU2JYOVJlQWdONS80Ly9XM3NKc0xqZDQvcy9Hd0xRTFVGUFRZb0JQVk1BNklyQXAyVUtBVDFSQUdpZTBLZFhDZ0V0VXdCb2t0Qm5KSW9BTFZJQWFJcmdaM1RLQUszWVBUNHFBTlQzOUNUNHlmTCt2U0pBWFFvQVZRbCswaWtDMUtJQVVJWGdoME9LQUZ0VEFOaVU0SWZ6RkFHMjRsMEFiT0xwNlJmQ0gyWnduTEFWQllEVk9hSEJkUlJtdHFBQXNDb25NYmlkNDRjMXVRZUFWVGh4d2JMY0c4RFNkbytQZjFJQVdOVFQwK2UxbHdCRGV2Lyt6N1dYd0VCc0FiQW80US9yY1h5eEpBV0FSVHc5ZmU3a0JCdHduTEVVQllDN09TSEJ0aHh6TEVFQjRDNU9SRkNIcVJ2MzJuM3RKa0J1OU1ISkI1cnc2T1pBYm1BQ3dFMkVQN1REOGNndGRsOS9iUUxBZFQ1OGNMS0JGajArbWdRd253a0FWeEgrMEM3SEo5ZFFBSmpOeVFWZ0hBb0F3RUFVZGVaU0FKakZTUVg2NFhobERnV0FpNXhNb0QrT1d5NVJBRGpMU1FUNjVmamxIQVVBQUFJcEFKems2Z0g2NXpqbUZBV0FWemxwd0RnY3o3eEdBZUFUVGhZQTQ1dEs4U1JnZ05GOStQQjVlWHo4VSsxbDBCQVRBQTU4K1BBWHRaY0FyTVR4elVzS0FBQUVVZ0Q0bWFzREdKL2puTDNKTFFBQVlaejNLU1lBL09URE42NEtJSVhqblZJVUFBQ0lwQURnYWdBQ09lNlpiQVVCWkhMK3oyWUNFTzRiVndFUXkvR2ZUUUVBZ0VBS1FERHRIM0FleUtVQUFFQWdCUUFBQWlrQW9ZejlnRDNuZzB3S0FBQUVVZ0FBSUpBQ0VNaTREemptdkpCbjhpd29BSDRrRDVKNEhUQUFQNUlIVVd3QkFFQWdCU0RNTi8veWw3V1hBRFRLK1NHTEFnQUFnUlFBQUFpa0FBQkFJQVVBQUFJcEFBQVFTQUVJNGc1ZjRCTG5pUnlUNXo0QThKSmN5R0FDQUFDQkZBQUFDS1FBQUVBZ0JRQUFBaWtBQUJESTY0QUJPQ1FYSWt6K1N3TndTQzRrc0FVQUFJRVVBQUFJcEFBQVFDQUZBQUFDS1FBQUVFZ0JBSUJBQ2dBQUJGSUFBQ0NRQWdBQWdSUUFBQWlrQUFCQUlBVUFBQUlwQUFBUWFIcjIwaWNBWHBBTEdhYmFDNENlL1AzZi9lZlovLzNmLytOdk4xckpiYXdmMkZNQVlJWkx3WFA4ejdVV1JOWVBIRk1BNEl5NXdYUHEvMWM3aUt4ZkVZQlRQaXZsdWZpVDhvZHIzQm8rUy8rTW1yL2IrbFBWUGxmNXM4VWYzd0tBVnl3WkhEVkN5UHJYK1Zrd0VnVUFqcXdSR0Z1R2tQVnY4ek9oZHdvQXZMQm1VR3dSUXRaZjUyZERqeFFBQUFpa0FNQlBYT0hXL1IyOXJ4OTZvd0FBUUNBRkFJcWIzR3IvcnQ3WER6MVNBQUFna0FJQUFJRVVBQUFJTkhsQ0xBQUg1RUlFRXdBQUNLUUFBRUFnQlFBQUFpa0FVTFo5Yi93YXY4djYyL3hkMExMSnZSNEF2Q1FYTXBnQXdFKzJ1REpjODNkWWZ4dS9BM294NlhvQUhKSUxDVXdBNEFWWHVIVis5aGEvdzlVL0hGSUE0SWliM0xiNW1WditMdUVQbjFJQTRCVkxCa2FOOExIK2RYNFdqRVFCZ0JPV0NJNmE0V1A5d2gvT21Xb3ZBRnEyRDVCcjN5SGZTdkJZUDNDS0FnQXp6QTJpVm9QSCtvRmpDZ0Jjb2ZlQXNYNWd6ejBBQUJCbzhyd0hBQTdJaFFnbUFBQVFTQUVBZ0VBS0FBQUVVZ0FBSUpBQ0FBQ0JGQUFBQ0tRQUFFQ2d5UmMrQVRna0Z4S1lBQUJBb0VuUEErQWx1WkRCQkFBQUFpa0FBQkJJQVFDQVFBb0FBQVR5T21BQURzbUZDQ1lBQUJCSUFRQ0FRQW9BQUFSU0FBQWdrQUlRNU5mdi9xZjJFb0RHT1Uva1VBQUFJSkFDQUFDQkZBQUFDS1FBQUVBZ0JRQUFBdTIrZXZqQlF4L0QvT3UzZjFWN0NVQ0RmdjN1djJzdmdRMlpBQUJBSUFVQUFBSXBBQUFRYVBmdXJYc0FFdjMyTy9jQkFCOTk5V0QvUDQwSkFBQUVVZ0FBSUpBQ0FCRE8rRCtUQWhES0FRK1FUUUVBZ0VBS1FEQlRBTUI1SUpjQ0FBQ0JGQUFBQ0tRQWhEUCtnMXlPLzJ3S0FBQUVVZ0J3RlFDQkhQY29BQUFRU0FHZ2xPSnFBSkk0M2ltbGxLa1VMd01FeU9LOFR5bTdkMisrOXplQm4vMzIzMzVaZXduQWlyNTYrMFB0SmRBSVd3QUFFRWdCNElDckF4aVg0NXVYRkFBKzRTUUI0M0ZjYzB3QkFJQkFDZ0N2Y3JVQTQzQTg4NXJkZzI4QmNNYTN2aFVBWFhzbi9EbkJCQUJnVU1LZmN4UUF6bklDQVJpVEFzQkZTZ0QweDNITEpRb0FzemlaUUQ4Y3I4eWhBRENia3dxMHozSEtYQW9BVjNGeWdYWTVQcm1HQWdBd0FPSFB0UlFBcnVaRUEyMXhUSEtMM2NPWEhnVEViYjc5M1M5ckx3SGl2WHZ6USswbDBLbmR3NWQvVkFDNDJiZS8rK3ZhUzRCWTc5NThYM3NKZE13V0FIZHhBb0k2SEh2Y1N3SGdidS9lZk85a0JCdHl2TEVFQllERk9DbkIraHhuTEVVQllGRk9UckFleHhkTFVnQlluSk1VTE1zMkcydFFBRmlGRXhZc3czSEVXaFFBVnVYa0JiZHovTEFtendGZ001NFpBUE1JZnJaZ0FzQm1uTlRnTXNjSlc5bTlOUUdnZ3U5TUErREFnK0JuWXdvQVZTa0NwQlA4MUtJQTBBUkZnRFNDbjlvVUFKcWlDREE2d1U4cmRtKy9VQUJvejNlL1Z3UVl4OE9YUXAvMktBQTBUeG1nUjBLZjFpa0FkRVVab0dWQ241NG9BSFJOSWFBbWdVL1BkbSsvK0lNQ3dGQysrLzNmMUY0Q2czbjQ4bysxbHdDTG0yb3ZBSGlkMEFIVzVGSEEwQ0RoRDZ4TkFZREdDSDlnQ3dvQU5FVDRBMXRSQUtBUndoL1lrcHNBb1RMQkQ5UmdBZ0FWQ1grZ0ZnVUFLaEgrUUUwS0FGUWcvSUhhRkFEWW1QQUhXakFWRHdLR1RUeDhJZmlCZHBnQXdBYUVQOUNheVFBQTF2VlcrQU1OTWdHQUZRbC9vRlVLQUt4RStBTXQ4eVJBV0pqZ0IzcGdBZ0FMRXY1QUw2YmllNEN3aUxkZi9LSDJFZ0JtTXdHQUJRaC9vRGZ1QVlBN0NINmdWeVlBY0NQaEQvUk1BWUFiQ0grZ2R3b0FYRW40QXlOUUFPQUt3aDhZaFpzQVlRYkJENHpHNjREaGdyZS9FdjdBZUd3QndCbkNIeGlWQWdBbkNIOWdaQW9BdkVMNEE2TnpFeUM4SVBpQkZDWUE4QlBoRHlSUkFLQUlmeURQNUZ1QXBIc2ovSUZBSmdCRUUvNUFxcWw0RWhDQjN2enF2Mm92QWFBcUV3RGlDSDhBQllBd3doL2dSd29BTVlRL3dFY0tBQkdFUDhBaFR3SmthSUlmNEhWZUI4eXczdnlEOEFjNHhSWUFReEwrQU9jcEFBeEgrQU5jcGdBQVFDQUZBQUFDS1FBQUVFZ0JBSUJBQ2dBQUJGSUFBQ0NRQWdBQWdSUUFBQWlrQUFCQW9LbDRHUUFBeEpuRVB3RGtzUVVBQUlHOERoZ0FBcGtBQUVBZ0JRQUFBaWtBQUJCSUFRQ0FRQW9BQUFSU0FBQWdrQUlBQUlFVUFBQUlwQUFBUUNBRkFBQUNLUUFBRUVnQkFJQkFDZ0FBQkZJQUFDRFFWSjY5RHhnQTBwZ0FBRUFnQlFBQUFrMDJBQUFnejJlbGxGM3RSUUFBMjdJRkFBQ0JGQUFBQ0tRQUFFQWdCUUFBQWlrQUFCQklBUUNBUUFvQUFBVGFGd0RQQWdDQUhEc1RBQUFJcEFBQVFLQ3BlQmtBQU1ReEFRQ0FRRlA1T0FMWWxXSWVBQUNEMjVWaUFnQUFrUlFBQUFpa0FBQkFvT01DNElGQUFEQ3VuM1BlQkFBQUFpa0FBQkJvOHIwL0FNanoyZ1RBZlFBQU1KNkRmTGNGQUFDQkZBQUFDSFNxQU5nR0FJQnhmSkxySmdBQUVNanJnQUVnMExrSmdHMEFBT2pmcTNsdUN3QUFBaWtBQUJEb1VnR3dEUUFBL1RxWjQxTnhGeUFBeEptekJXQUtBQUQ5T1p2ZjdnRUFnRUFLQUFBRW1sc0FiQU1BUUQ4dTVyWUpBQUFFdXFZQW1BSUFRUHRtNWJVSkFBQUV1cllBbUFJQVFMdG01L1RrTVVBQWtPZVcxd0h2aXNjSEFrQnJycHJTdXdjQUFBTGRXZ0RjQ3dBQTdiZzZsMDBBQUNEUVBRWEFGQUFBNnJzcGorK2RBQ2dCQUZEUHpUbHNDd0FBQWkxUkFFd0JBR0I3ZCtYdjVDdjlBSkJucVMwQVV3QUEyTTdkdWJ2a1BRQktBQUNzYjVHOGRSTWdBQVJhdWdDWUFnREFlaGJMMlRVbUFFb0FBQ3h2MFh4ZGF3dEFDUUNBNVN5ZXE3ZThEaGdBNk55YU53R2FBZ0RBL1ZiSjA3Vy9CYUFFQU1EdFZzdlJMYjRHcUFRQXdQVld6VS9QQVFDQVFOTkc5d0R1aXBjT0FNQmNxMC9QdDV3QTJBb0FnTXMyeWN1dHR3Q1VBQUE0YmJPY3JIRVBnQklBQUovYU5COXIzUVNvQkFEQVI1dm40bFR4M2p3M0JnSkFwWXZpMmw4RE5Ba0FJRm0xSEt4ZEFFcFJBZ0RJVkRYL1dpZ0FwU2dCQUdTcG5udXRGSUJTR3Znd0FHQURUZVJkYTY4RGRtTWdBQ05ySXZ4TGFXc0NzTmZNaHdNQUMyb3EzMW9zQUtVMDlpRUJ3SjJheTdWV0MwQXBEWDVZQUhDREp2T3M1UUpRU3FNZkdnRE0xR3lPdFY0QVNtbjR3d09BTTVyT3I2bjJBbWJhZjRpK0lRQkE2NW9PL3IwZUpnQXZkZkdoQWhDcm01enFyUUNVMHRHSEMwQ1VydktwbHkyQVk3WUVBR2hGVjhHL04zV2VvSjRjQ0VCTlhZWi9LWDF1QVJ6cjlzTUhvR3RkNTArdld3REhiQWtBc0pXdWczOXZHaXd6YlFrQXNLWWh3citVY1NZQUw1a0dBTEMwWVlKL3I3WFhBUzlKRVFEZ1hzTUYvOTRJTndGZU11eC9QQUJXTlhSK2pMZ0Y4QnJUQUFEbUdqcjQ5MUlLd0o0aUFNQXBFY0cvbDFZQTloUUJBUGFpZ244dnRRRHNLUUlBdVNLRGZ5KzlBT3dwQWdBNW9vTi9Ud0U0OVBJdmhUSUFNQTZoZjBRQk9NMVVBS0IvZ3Y4RUJlQXlVd0dBdmdqOUdSU0E2eWdEQUcwUytsZFNBRzZuREFEVUpmVHZvQUFzNC9ndm9VSUFzRHlCdnlBRllCMEtBY0Q5QlA2S0ZJQnR2UGFYV0NrQStFalliK3ovQVVPNklMTFowS3RZQUFBQUFFbEZUa1N1UW1DQyIsICJzaXplcyI6ICI1MTJ4NTEyIiwgInR5cGUiOiAiaW1hZ2UvcG5nIiwgInB1cnBvc2UiOiAiYW55In0sIHsic3JjIjogImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBZ0FBQUFJQUNBWUFBQUQwZU5UNkFBQU1qMGxFUVZSNG5PM2R2WTRrVnhtQTRScnJYQVNHeERuWFFZU0U3UDB4M3RrUWlUdGJHOGxBUnNSMUVJSVhoRzFTcm1BSUNHeDVkN3pqbmU0NnArcDlIcWtUYXowNlFYV2R0NytxN3JyNTNlLy9lN2NCQUNuajdzNytEd0ExSDh4ZUFBQ3dQd0VBQUVFQ0FBQ0NCQUFBQkFrQUFBZ1NBQUFRSkFBQUlFZ0FBRUNRQUFDQUlBRUFBRUVDQUFDQ0JBQUFCQWtBQUFnU0FBQVFORFpQQXdhQUhCTUFBQWdhbXhFQUFPU1lBQUJBa0FBQWdLRGhBZ0FBOUpnQUFFQ1FBQUNBSUFFQUFFRUNBQUNDQkFBQUJBa0FBQWdTQUFBUUpBQUFJRWdBQUVDUXh3RURRSkFKQUFBRUNRQUFDQklBQUJBa0FBQWdhR3p1QWdTQUhCTUFBQWdTQUFBUUpBQUFJRWdBQUVEUWNBc2dBUFNZQUFCQWtBQUFnQ0FCQUFCQkFnQUFnandPR0FDQ1RBQUFJRWdBQUVDUUFBQ0FJQUVBQUVFQ0FBQ0NCQUFBQkkzTjl3QUJJTWNFQUFDQ0JBQUFCQWtBQUFnU0FBQVFKQUFBSUVnQUFFQ1FBQUNBSUk4REJvQ2dZZjhIZ0I2WEFBQWdTQUFBUUpBQUFJQWdBUUFBUVFJQUFJSUVBQUFFQ1FBQUNCSUFBQkEwTmo4RkNBQTVKZ0FBRUNRQUFDQklBQUJBa0FBQWdDQ1BBd2FBSUJNQUFBZ1NBQUFRSkFBQUlFZ0FBRUNRQUFDQW9PRkxBQURRWXdJQUFFRUNBQUNDQkFBQUJBa0FBQWdTQUFBUUpBQUFJR2hzbmdZRUFEa21BQUFRNUhIQUFCQmtBZ0FBUVFJQUFJSUVBQUFFQ1FBQUNCSUFBQkFrQUFBZ1NBQUFRSkFBQUlBZ0FRQUFRUUlBQUlJRUFBQUVEWThDQUlBZUV3QUFDQklBQUJBMHRqc1hBUUNneGdRQUFJSUVBQUFFQ1FBQUNCSUFBQkFrQUFBZ1NBQUFRSkFBQUlBZ0FRQUFRUUlBQUlJRUFBQUVDUUFBQ0JJQUFCQWtBQUFnU0FBQVFORFlQQTBZQUhKTUFBQWdhQmdBQUVEUDJGd0RBSUFjbHdBQUlFZ0FBRUNRQUFDQUlBRUFBRUVDQUFDQ0JBQUFCQWtBQUFnU0FBQVFKQUFBSUVnQUFFQ1FBQUNBSUk4REJvQWdFd0FBQ0JJQUFCQWtBQUFnU0FBQVFKQUFBSUNnc2ZrYUFBRGttQUFBUU5EdytSOEFla3dBQUNCSUFBQkFrQUFBZ0NBQkFBQkJBZ0FBZ2dRQUFBUjVIREFBQkprQUFFQ1FBQUNBSUFFQUFFRUNBQUNDQkFBQUJBa0FBQWdTQUFBUU5EWS9CQUFBT1NZQUFCQWtBQUFnU0FBQVFKQUFBSUNnNFJaQUFPZ3hBUUNBSUk4REJvQ2dNWHNCc0twWHIzNDJld2xjeU11WC81bTlCRmpPemUzdHQyWUE1Tm5zZTBRQmRRS0FKQnMrM3ljR0tCSUFaTmowZVFneFFJVUE0UFJzL0x3dk1jQ1pDUUJPeThiUHBRZ0J6a2dBY0RvMmZxNUZDSEFtQW9EVHNQR3pGeUhBR2ZnbFFFN0I1cytlSEcrY2dRa0FoK1pFekd5bUFSelZ6ZTN0TndLQVEzcjE2c1BaUzRCdDI3YnQ1Y3R2Wnk4QmZqS1hBRGdrbXo4cmNUeHlSQUtBUTNuMTZrTW5XNWJrdU9Sb0JBQ0g0UVRMNmdRcVIzSnorOEk5QUt6djFlZE9xaHpMeTF2M0JiQTJFd0NXWi9QbmlCeTNyRTRBc0RRblVZN004Y3ZLQkFETGN2TGtEQnpIckdxNEFZQVZmZTZreVlrNHo3SWlFd0NBS3hPMHJFZ0FzQnduUzg3SWNjMXFCQUJMY1pMa3pCemZyRVFBc0F3blJ3b2M1NnhDQUFCQWtBQmdDVDRWVWVKNFp3VUNnT21jRENseTNET2JBQUNBSUFIQVZENEZVZWI0WjZiaE42b0FabklPWm82YkY1OTk3ZWhqaXMrLytQbnNKY0FTYmw5OE0zc0pCTGtFQUFCQkFvQXBmUHFINzNnL01JTUFBSUFnQWNEdWZOcUJOM2xmc0RjQkFBQkJBZ0FBZ2dRQXV6TG1oUHQ1ZjdBbkFRQUFRY092QUFHc3d6bVp2WmdBQUVDUUFHQTNYN2krQ2Uva2ZjSmVCQUFBQkFrQUFBZ1NBQUFRTk54eUNyQVk1MlYyY1BQWmIvL3RVT1BxdnZqREwyWXZBUTdseFdkZnoxNENKK2NTQUFBRUNRQUFDQklBQUJBa0FBQWdTQUFBUUpBQUFJQWdBUUFBUVFJQUFJSUVBQUFFQ1FBQUNCSUFBQkFrQUFBZ1NBQUFRTkM0OHl4QWdPVTROM050SmdBQUVDUUFBQ0JJQUFCQTBOZzJGNXJnV243OXE3Kzk5Yi8vNWErLzNIa2wzN0dtbzNCdTVyckc3QVhBMmR5M21kMzNiL2JZNUt3SitDR1hBT0NDSHJLcFhlTC91ZmJmTDY0SmFnUUFYTWhqTnFocmJXN1dCTnhIQU1BRlhHSmp1dlRtWmszQWp4RUE4RWlYM0pBdTliZXNDWGdYQVFBQVFRSUFIdUVhbjBRZit6ZXRDWGdJQVFBQVFRSUFBSUlFQUFBRURiODJDYkFnNTJhdXpBUUFBSUlFQUFBRUNRQjRoR3M4b09heGY5T2FnSWNRQUFBUTlNSGQ5djk3VGJ5OHJ2azZzMHQrRXIzVTM3S200NXY5bnZVNi84c0VBQzdnRWh2U3BUYzFhd0orekFmekc4U3I4VHEveDJ4TTE5clVyT25JWnI5bnZjNytNZ0dBQzNxZkRlcmFtNW8xQVc4elppOEF6dWI3RzlWOUQ2elplek96SnVDSEJBQmMwWW9ibURVQjIrWW1RQUJJRWdBQUVDUUFBQ0JJQUFCQWtBQUFnS0N4M2MxZUFnQnZjRzdteWt3QUFDQklBQUJBa0FBQWdDQUJBQUJCQWdBQWdnUUFBQVFKQUFBSUdyNXNDckFpNTJhdXl3UUFBSUtHeGdSWWozTXoxMllDQUFCQkFnQUFnZ1FBdS9qMCtiOW1Md0VPdy91RlBRZ0FBQWp5T0dDQTFUZ3Zzd01UQUFBSUVnQUFFQ1FBMk0ybno5ellCTy9pZmNKZUJBQUFCQWtBQUFnU0FPektlQlB1NS8zQm5nUUFBQVFKQUFBSUVnRHN6cGdUM3VSOXdkNEVBQUFFRGI4NUNiQUM1MkwyWlFMQUZKOCsrK2ZzSmNBeXZCK1lRUUFBUUpBQVlCcWZlc0Q3Z0huR25jdE9BTk00QnpPTENRQlRQWC9xMHc5ZGpuOW1FZ0FBRTlqOG1VMEFNSjBUSWNEK0JBQkxFQUdVT041WmdRQUEySkhObjFVSUFKYmh4QWl3SHdIQVVrUUFaK2I0WmlVQ2dPVTRTWEpHam10V0l3QllrcE1sWitKNFprVUNBT0NLYlA2c1NnQ3dMQ2RPZ09zUkFDeE5CSEJramw5V0pnQllucE1vUitTNFpYVTN6NTU4NVZsVUhNS1hmL3BvOWhMZ25aNC9mVDE3Q2ZBZ044OCtFUUFjeTVkLy9tajJFdUN0bmo5NVBYc0o4R0F1QVhBNFRyS3N5SEhKMFFnQURzbkpscFU0SGpraUFjQmhPZWt5Mi9NbnJ4MkhISllBNE5DY2dKbkZjY2ZSQ1FCT3djbVl2WWhPenVMbXFXOEJjREovOUMwQnJ1U1pqWjhURVFDY2xoRGdVbXo4bkpFQTRQU0VBTy9MeHMrWkNRQXloQUFQWWRPblFnQ1FKQWI0UHBzK1JRSUFOa0ZRWk5PblRnREFXd2lDYzdIWnc1dkc3QVVBRDJjakF5N0ZEd0hCUWRqOGdVc2Ftd3NBc0x4bm43eWV2UVRnWk1hbUFHQnB6ejc1YXZZU2dCTnlDUUFXWnZNSHJzVk5nTEFnR3o5d2JTWUFzQmliUDdBSEFRQUxzZmtEZXhFQXNBaWJQN0FuQVFBTHNQa0RlM01USUV4azR3ZG1NUUdBU1d6K3dFd0NBQ2F3K1FPekRiOERDUHQ2YXZNSEZ1QWVBTmlKalI5WWlVc0FzQU9iUDdBYUFRQlhadk1IVnVSeHdIQkZUeisyK1FOck1nR0FLN0g1QXl0ekV5QmNtSTBmT0FJVEFMZ2dtejl3RkdOekV3QmN4Tk9QL3pGN0NRQVBaZ0lBRjJEekI0NUdBTUFqMmZ5QkkzSVRJTHduR3o5d1pDWUE4QjVzL3NEUkNRRDRpV3ord0JrSUFQZ0piUDdBV1FnQWVDQ2JQM0FtYmdLRWQ3RHhBMmRrQWdBL3d1WVBuSlVBZ0h2WS9JRXp1M255bTcvN0xXQUFpREVCQUlDZzRlTS9BUFNZQUFCQWtBQUFnQ0FCQUFCQkFnQUFnc2EydVEwUUFHcE1BQUFnU0FBQVFKQUFBSUFnQVFBQVFRSUFBSUlFQUFBRUNRQUFDQnArQmdBQWVrd0FBQ0JJQUFCQWtBQUFnQ0FCQUFCQkFnQUFnZ1FBQUFRTjN3SUVnQjRUQUFBSUdwdGZBZ0tBSEJNQUFBZ1NBQUFRSkFBQUlFZ0FBRUNRQUFDQUlJOERCb0FnRXdBQUNCSUFBQkFrQUFBZ1NBQUFRSkFBQUlBZ0FRQUFRUUlBQUlJRUFBQUVDUUFBQ0JJQUFCQWtBQUFnYUd3ZUJnQUFPY1AyRHdBOUxnRUFRSkRIQVFOQWtBa0FBQVFKQUFBSUVnQUFFQ1FBQUNCSUFBQkFrQUFBZ0NBQkFBQkJBZ0FBZ2dRQUFBUUpBQUFJRWdBQUVDUUFBQ0JJQUFCQWtBQUFnS0N4M1hrZU1BRFVtQUFBUUpBQUFJQ2c0UUlBQVBTWUFBQkFrQUFBZ0NBQkFBQkJBZ0FBZ2dRQUFBUUpBQUFJRWdBQUVDUUFBQ0JJQUFCQWtBQUFnQ0FCQUFCQlkvTXdBQURJTVFFQWdLQ3hHUUVBUUk0SkFBQUVDUUFBQ0JJQUFCQWtBQUFnU0FBQVFKQUFBSUNnNFV1QUFOQmpBZ0FBUVFJQUFJSUVBQUFFQ1FBQUNCSUFBQkRrY2NBQUVHUUNBQUJCQWdBQWdnUUFBQVFKQUFBSUdwdTdBQUVneHdRQUFJSUVBQUFFQ1FBQUNCSUFBQkFrQUFBZ1NBQUFRSkFBQUlBZ0FRQUFRY1BQQUFGQWo4Y0JBMENRU3dBQUVDUUFBQ0JJQUFCQWtBQUFnQ0FCQUFCQkFnQUFnZ1FBQUFTTnpROEJBRUNPQ1FBQUJBa0FBQWdTQUFBUUpBQUFJRWdBQUVDUUFBQ0FJSThEQm9BZ0V3QUFDQklBQUJBa0FBQWdTQUFBUU5Cd0R5QUE5SmdBQUVDUUFBQ0FJQUVBQUVFQ0FBQ0N4dWFuQUFFZ3h3UUFBSUlFQUFBRUNRQUFDQklBQUJEa2NjQUFFR1FDQUFCQkFnQUFnZ1FBQUFRSkFBQUlFZ0FBRUNRQUFDQklBQUJBa0FBQWdDQUJBQUJCd3c4QkFrQ1BDUUFBQkFrQUFBZ2FtNmNCQVVDT0NRQUFCSGtjTUFBRW1RQUFRSkFBQUlBZ0FRQUFRUUlBQUlJRUFBQUVDUUFBQ0JJQUFCQWtBQUFnU0FBQVFKQUFBSUFnQVFBQVFRSUFBSUlFQUFBRUNRQUFDUG9mNjU1dk5lVGdPcmdBQUFBQVNVVk9SSzVDWUlJPSIsICJzaXplcyI6ICI1MTJ4NTEyIiwgInR5cGUiOiAiaW1hZ2UvcG5nIiwgInB1cnBvc2UiOiAibWFza2FibGUifV19">
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAGKElEQVR4nO3dvZLcRBTF8daU3oGFDFKegwjKu/Nhkl0iqngxZpZoCydEfg5HYHvJIOQJRDAl1+x4PvRx1a17z//nUoBra5Clc6ZbrdFs9fMv/6WZaUrvACZXld6BVt00RfNG2DWdOu9FSlEX+H8SepxymItsZchZAIKPrtqsTF6EHAUg+Bhq8iJMWQCCDyuTFaGeIKYEH1MxL0JtnFfCjxyaZFSC2iixBB+5mYwGC8MdAUoYlb+xBSD8mIPBORxTAMKPORmUx6GrQIQfc9T74njICED4MWe98tl3GZTww4POI0GfEYDww5NOee16H4Dww6OrI0GXi2DCD88ulsDiRhjg1rUC8O6PCM7m+NIqEOFHJCenQkyBIO1cAXj3R0Sf5XqKB2IAN07dB6ASiOzFtQDXAJB2XADe/aHgU86tnwkGXDkcAWgClDQpsQoEcVwEQ1q7DMo4AEUNIwCkUQBIq1PZX5ABFMUIAGmLxAUwhDECQBoFgDSrr0cHXGIVCNKYAkEaBYA0CgBpFADSKACk8UAMpNUNDYAwpkCQRgEgjQJAGhfBkMYIAGl8Mxyk8XHoA9tfvyi9C9k8/PRv6V2Yher+4R/ZDigF/hrVQkgWgOCfp1aE6v5epwDbLcHv6uFBowgSBSD4w0UvQvhlUMI/TvTjt9gvg8bcop+8XPbHsfz5nGILOwJstzeldyGUqMdzUb6D9lvUk1XadntT/Nxab4vie2C87Qj/pHbbm+Ln2HILNQXa7Qh/DpGOc5gCRDopHkQ53mEKAAwRYhk0yruRN/vjXv78j9l4IAbjOM+P+ynQ7vHL0rsgzfvx53kAjOY5Q65HgEfn7z5ReD4PrgsAjMUzwTDiM0esAsGG0xy5nQI9/vZV6V3AAa/nw20BAAssg8KMxywxAkAaBYA0fk8w7DjMEiMApFEASKMAkEYBIK12eN1S1PffvXvx33+8/TbE61jwmKW69A54cRy047/vGry5vY46x88E53MubN5/xl7pTPTfuAa4ok+QLv3s3F4HexQA0igApPFADOw4zBIjAKQtmuTzTy59lhMv/ezcXmcKpTMx5A8jQAddguTxZ8CNsM7aQI298zq311FHAXqyCtjcXkcVq0Cw4zBLXANAGgWAtDrnkiJi85glRgBI4yIYdhxmiREA0igApFEASHP7SOSPm78nOSAYZn8+yueCRyKBHvhaFJjwmiNGAEhzXYDXa64D5sDzeXBdAGAs9wXw/O4Tgffjzy/IwDjO8+N+BEgppder59K7ICnCcQ9RAOQXIfwppbQofy/OZtsEOSFelD7fVluoEYAS5BHpOIcqQEqxTs4cRTu+i+Jj0ATbZvlsepCwt1k+Fz+31pvbT4Ne2zbLj2dPJPrbH8/y59V6CzcFOkQJbEQ+jqELkFLskze1zfJj+ONXre4+NKV3Ipen378uvQturIMHvyVVgBZFOE8l+K1qdatXgNbTG4rQWt9pBb9VrW7fyxbg2NObb0rvQjbruw+ld2EWKMARixIQLj/CrwLlRvh9oQCGCL8/fDeokfUt4feoJv/jrQi/W0yBRiL8vtWJOdAgq9v3pXcBBhgBBiD8cVCAngh/LKwC9bB6RfijYQToiPDHRAE6IPxxcR/ggiXBD49l0DOWr/4qvQvIgCnQCYRfR3X3w58MAZDFCABpFADSKACk1Q2rQBDGRyEgjSkQpFEASKMAkEYBII0CQBq/JxjS+Dg0pDEFgjQKAGmLlFJVeieAUhgBII1VIEhjBIA0CgBp7X2AKvH1ENBTMQJAGg/EQNrhCMD9ACipUuKb4SDu+BqAUQAKPuWci2BIO/VxaJZEEdmLWQ6rQJB2bgrEtQAi+izXXANA2qVlUK4FEMnJWc21EYCpECI4m2OmQJDWZRWIqRA8uziL6fq1KJQAHl2dwveZAnE9AE865bXvh+EYCeBB5zfrIRfBjASYs175HPpRCEYCzFHvN+cxy6CMBJiTQXkcex+AEmAOBufQ4kYYJUBJo/Jn9fXo7U5wXYBcTN54rZ8J5uIYOZjNOqZ4IIbRAFMxn27X1i94gCLAymTXmVMWoEURMNTkCyw5CtCiCOgq28pizgK0Dv9xlAGtIsvp/wPCNLX8zlCxhQAAAABJRU5ErkJggg==">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAGKElEQVR4nO3dvZLcRBTF8daU3oGFDFKegwjKu/Nhkl0iqngxZpZoCydEfg5HYHvJIOQJRDAl1+x4PvRx1a17z//nUoBra5Clc6ZbrdFs9fMv/6WZaUrvACZXld6BVt00RfNG2DWdOu9FSlEX+H8SepxymItsZchZAIKPrtqsTF6EHAUg+Bhq8iJMWQCCDyuTFaGeIKYEH1MxL0JtnFfCjxyaZFSC2iixBB+5mYwGC8MdAUoYlb+xBSD8mIPBORxTAMKPORmUx6GrQIQfc9T74njICED4MWe98tl3GZTww4POI0GfEYDww5NOee16H4Dww6OrI0GXi2DCD88ulsDiRhjg1rUC8O6PCM7m+NIqEOFHJCenQkyBIO1cAXj3R0Sf5XqKB2IAN07dB6ASiOzFtQDXAJB2XADe/aHgU86tnwkGXDkcAWgClDQpsQoEcVwEQ1q7DMo4AEUNIwCkUQBIq1PZX5ABFMUIAGmLxAUwhDECQBoFgDSrr0cHXGIVCNKYAkEaBYA0CgBpFADSKACk8UAMpNUNDYAwpkCQRgEgjQJAGhfBkMYIAGl8Mxyk8XHoA9tfvyi9C9k8/PRv6V2Yher+4R/ZDigF/hrVQkgWgOCfp1aE6v5epwDbLcHv6uFBowgSBSD4w0UvQvhlUMI/TvTjt9gvg8bcop+8XPbHsfz5nGILOwJstzeldyGUqMdzUb6D9lvUk1XadntT/Nxab4vie2C87Qj/pHbbm+Ln2HILNQXa7Qh/DpGOc5gCRDopHkQ53mEKAAwRYhk0yruRN/vjXv78j9l4IAbjOM+P+ynQ7vHL0rsgzfvx53kAjOY5Q65HgEfn7z5ReD4PrgsAjMUzwTDiM0esAsGG0xy5nQI9/vZV6V3AAa/nw20BAAssg8KMxywxAkAaBYA0fk8w7DjMEiMApFEASKMAkEYBIK12eN1S1PffvXvx33+8/TbE61jwmKW69A54cRy047/vGry5vY46x88E53MubN5/xl7pTPTfuAa4ok+QLv3s3F4HexQA0igApPFADOw4zBIjAKQtmuTzTy59lhMv/ezcXmcKpTMx5A8jQAddguTxZ8CNsM7aQI298zq311FHAXqyCtjcXkcVq0Cw4zBLXANAGgWAtDrnkiJi85glRgBI4yIYdhxmiREA0igApFEASHP7SOSPm78nOSAYZn8+yueCRyKBHvhaFJjwmiNGAEhzXYDXa64D5sDzeXBdAGAs9wXw/O4Tgffjzy/IwDjO8+N+BEgppder59K7ICnCcQ9RAOQXIfwppbQofy/OZtsEOSFelD7fVluoEYAS5BHpOIcqQEqxTs4cRTu+i+Jj0ATbZvlsepCwt1k+Fz+31pvbT4Ne2zbLj2dPJPrbH8/y59V6CzcFOkQJbEQ+jqELkFLskze1zfJj+ONXre4+NKV3Ipen378uvQturIMHvyVVgBZFOE8l+K1qdatXgNbTG4rQWt9pBb9VrW7fyxbg2NObb0rvQjbruw+ld2EWKMARixIQLj/CrwLlRvh9oQCGCL8/fDeokfUt4feoJv/jrQi/W0yBRiL8vtWJOdAgq9v3pXcBBhgBBiD8cVCAngh/LKwC9bB6RfijYQToiPDHRAE6IPxxcR/ggiXBD49l0DOWr/4qvQvIgCnQCYRfR3X3w58MAZDFCABpFADSKACk1Q2rQBDGRyEgjSkQpFEASKMAkEYBII0CQBq/JxjS+Dg0pDEFgjQKAGmLlFJVeieAUhgBII1VIEhjBIA0CgBp7X2AKvH1ENBTMQJAGg/EQNrhCMD9ACipUuKb4SDu+BqAUQAKPuWci2BIO/VxaJZEEdmLWQ6rQJB2bgrEtQAi+izXXANA2qVlUK4FEMnJWc21EYCpECI4m2OmQJDWZRWIqRA8uziL6fq1KJQAHl2dwveZAnE9AE865bXvh+EYCeBB5zfrIRfBjASYs175HPpRCEYCzFHvN+cxy6CMBJiTQXkcex+AEmAOBufQ4kYYJUBJo/Jn9fXo7U5wXYBcTN54rZ8J5uIYOZjNOqZ4IIbRAFMxn27X1i94gCLAymTXmVMWoEURMNTkCyw5CtCiCOgq28pizgK0Dv9xlAGtIsvp/wPCNLX8zlCxhQAAAABJRU5ErkJggg==">
+<title>MYChat — Room-Based Messenger</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bg-gradient-1: #6366F1;
+    --bg-gradient-2: #8B5CF6;
+    --bg-gradient-3: #4A44D4; 
+    --bg-gradient-4: #3B82F6;
+    
+    --surface: rgba(255, 255, 255, 0.85);
+    --surface-alt: rgba(255, 255, 255, 0.95);
+    --scoop-bg: #FFFFFF;
+    
+    --line: rgba(255, 255, 255, 0.3);
+    --text: #1E293B;
+    --text-dim: #64748B;
+    --text-header: #FFFFFF;
+    
+    --primary: #4A44D4;
+    --primary-glow: rgba(74, 68, 212, 0.4);
+    --accent: #10B981; 
+    --red: #EF4444;
+    
+    --bubble-own: #FFFFFF;
+    --bubble-own-text: #4A44D4;
+    --bubble-other: rgba(255, 255, 255, 0.2);
+    --bubble-other-text: #FFFFFF;
+    
+    --sans: 'Poppins', sans-serif;
+  }
+  
+  /* --- DARK BLACK & GRAY DARK MODE --- */
+  :root.dark-mode {
+    --bg-gradient-1: #000000;
+    --bg-gradient-2: #0a0a0a;
+    --bg-gradient-3: #141414;
+    --bg-gradient-4: #050505;
+
+    --surface: rgba(20, 20, 20, 0.85);
+    --surface-alt: rgba(35, 35, 35, 0.95);
+    --scoop-bg: #111111;
+    
+    --line: rgba(255, 255, 255, 0.1);
+    --text: #FFFFFF;
+    --text-dim: #999999;
+    --text-header: #FFFFFF;
+
+    --primary: #E0E0E0; 
+    --primary-glow: rgba(255, 255, 255, 0.15);
+    
+    --bubble-own: #333333;
+    --bubble-own-text: #FFFFFF;
+    --bubble-other: rgba(255, 255, 255, 0.08);
+    --bubble-other-text: #E0E0E0;
+  }
+  
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  
+  @keyframes gradientShift { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+
+  html, body{ 
+    height: 100%; width: 100%; overflow: hidden; 
+    color: var(--text); font-family: var(--sans); overscroll-behavior: none; 
+    background: linear-gradient(-45deg, var(--bg-gradient-1), var(--bg-gradient-2), var(--bg-gradient-3), var(--bg-gradient-4));
+    background-size: 400% 400%; animation: gradientShift 15s ease infinite; transition: color 0.4s ease, background 0.4s ease;
+  }
+  
+  @media (prefers-reduced-motion: reduce){ *{ animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important; } }
+  
+  /* Safe Area Insets applied for True Mobile Fullscreen Notch Evasion */
+  #app{ 
+    position: fixed; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; overflow: hidden; display: flex; flex-direction: column; 
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
+  ::-webkit-scrollbar{ width:6px; } ::-webkit-scrollbar-track{ background:transparent; } ::-webkit-scrollbar-thumb{ background:var(--surface); border-radius:4px; opacity: 0.5;}
+
+  /* ---------- Advanced Animations ---------- */
+  @keyframes fadeSlideUp{ from{ opacity:0; transform:translateY(20px); } to{ opacity:1; transform:translateY(0); } }
+  @keyframes msgPopOwn{ 0% { opacity:0; transform:translate(15px, 15px) scale(0.9); } 60% { transform:translate(0, 0) scale(1.03); } 100% { opacity:1; transform:scale(1); } }
+  @keyframes msgPopOther{ 0% { opacity:0; transform:translate(-15px, 15px) scale(0.9); } 60% { transform:translate(0, 0) scale(1.03); } 100% { opacity:1; transform:scale(1); } }
+  @keyframes msgPopSystem{ from{ opacity:0; transform:scale(0.92); } to{ opacity:1; transform:scale(1); } }
+  @keyframes ringPulse{ 0%{ box-shadow: 0 0 0 0 rgba(255,255,255,0.4); } 70%{ box-shadow: 0 0 0 8px rgba(255,255,255,0); } 100%{ box-shadow: 0 0 0 0 rgba(255,255,255,0); } }
+  @keyframes popIn { 0%{ transform: scale(0.8); opacity: 0; } 100%{ transform: scale(1); opacity: 1; } }
+
+  /* ================= LANDING ================= */
+  #landing{ height: 100%; width: 100%; display: flex; align-items: center; justify-content: center; padding: 20px; overflow-y: auto; position: relative; z-index: 1; perspective: 1200px; }
+  
+  .join-card{ 
+    width: 100%; max-width: 420px; background: var(--surface); border: 1px solid var(--line); 
+    border-radius: 30px; padding: 40px 30px; position: relative; 
+    animation: fadeSlideUp 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; 
+    box-shadow: 0 30px 60px -15px rgba(0,0,0,0.3); 
+    backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+    transform-style: preserve-3d; transition: transform 0.1s ease-out; 
+  }
+  .join-card.flipping { transition: transform 0.4s ease-in-out !important; }
+
+  .brand-row{ display:flex; align-items:center; gap:12px; margin-bottom:8px; transform: translateZ(40px); }
+  .brand-mark{ font-family: var(--sans); font-weight:700; font-size:28px; letter-spacing:-0.02em; color: var(--text); }
+  .brand-mark span{ color: var(--primary); }
+  .pulse-dot{ width:10px; height:10px; border-radius:50%; background: var(--accent); animation: ringPulse 2s infinite; margin-left:auto; }
+  .join-sub{ color: var(--text-dim); font-size:14px; line-height:1.6; margin-bottom:32px; transform: translateZ(30px); font-weight: 500;}
+  
+  .field{ margin-bottom:20px; transform: translateZ(20px); }
+  .field label{ display:block; font-weight:700; font-size:11px; color: var(--text-dim); margin-bottom:8px; letter-spacing:0.05em; text-transform: uppercase; }
+  .field input{ 
+    width:100%; background: var(--surface-alt); border:2px solid transparent; color: var(--text); 
+    font-family: var(--sans); font-size:16px; padding:16px 18px; border-radius:16px; outline:none; 
+    transition: all 0.2s ease; box-shadow: inset 0 2px 5px rgba(0,0,0,0.03); font-weight: 500;
+  }
+  .field input:focus{ border-color: var(--primary); background: var(--scoop-bg); box-shadow: 0 0 0 4px var(--primary-glow); }
+  .field-hint{ font-size:11.5px; color:var(--text-dim); margin-top:8px; line-height:1.4; }
+  
+  .connect-btn{ 
+    width:100%; margin-top:16px; background: var(--primary); color:var(--scoop-bg); border:none; border-radius:16px; 
+    font-family: var(--sans); font-weight:600; font-size:16px; padding:18px; cursor:pointer; 
+    letter-spacing:0.02em; transition: all 0.2s ease; box-shadow: 0 10px 25px -5px var(--primary-glow);
+    transform: translateZ(30px);
+  }
+  .connect-btn:hover{ filter:brightness(1.15); transform: translateZ(35px) scale(1.03); }
+  .connect-btn:active{ transform: translateZ(15px) scale(0.97); }
+  .connect-btn:disabled{ opacity:0.5; cursor:not-allowed; }
+  .join-error{ color: var(--red); font-size:13px; margin-top:14px; font-weight: 600; display:none; text-align: center; transform: translateZ(20px);}
+  
+  #bgCanvas{ position: fixed; inset: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; opacity: 0.8; }
+
+  /* Card Flip Mechanics */
+  .card-scene{ width: 100%; max-width: 420px; perspective: 1600px; }
+  .join-card.rotY90{ transform: rotateY(90deg) scale(0.95); } 
+  .join-card.rotYneg90{ transform: rotateY(-90deg) scale(0.95); transition: none !important; }
+  .step-panel.hidden{ display: none; }
+  .step-dots{ display:flex; gap:8px; margin: 16px 0 28px; transform: translateZ(20px); }
+  .step-dots .sd{ width:8px; height:8px; border-radius:50%; background: var(--line); transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+  .step-dots .sd.active{ background: var(--primary); width:28px; border-radius:4px; }
+  .back-link{ background:none; border:none; color: var(--text-dim); font-family: var(--sans); font-weight:600; font-size:13px; cursor:pointer; margin-top:20px; width:100%; display:flex; align-items:center; justify-content:center; gap:6px; transition: color .2s ease; transform: translateZ(20px);}
+  .back-link:hover{ color: var(--text); }
+  
+  /* 3D Rotating Logo Cube */
+  .orb3d{ width: 34px; height: 34px; margin-left: auto; perspective: 300px; flex-shrink: 0; }
+  .orb3d .cube{ width: 100%; height: 100%; position: relative; transform-style: preserve-3d; animation: cubeSpin 8s linear infinite; }
+  .orb3d .face{ position: absolute; width: 34px; height: 34px; background: var(--primary); border: 1px solid rgba(255,255,255,0.4); opacity: 0.85; border-radius: 8px; box-shadow: 0 0 20px var(--primary-glow); }
+  .orb3d .f1{ transform: translateZ(17px); } .orb3d .f2{ transform: rotateY(90deg) translateZ(17px); } .orb3d .f3{ transform: rotateY(180deg) translateZ(17px); } .orb3d .f4{ transform: rotateY(-90deg) translateZ(17px); } .orb3d .f5{ transform: rotateX(90deg) translateZ(17px); } .orb3d .f6{ transform: rotateX(-90deg) translateZ(17px); }
+  @keyframes cubeSpin{ from{ transform: rotateX(0deg) rotateY(0deg); } to{ transform: rotateX(360deg) rotateY(360deg); } }
+
+  /* ================= CHAT ================= */
+  #chat{ display: none; height: 100%; width: 100%; overflow: hidden; position: relative; z-index: 1; }
+  .chat-shell{ height: 100%; width: 100%; display: grid; grid-template-columns: 320px 1fr; max-width: 1800px; margin: 0 auto; position: relative; overflow: hidden; }
+
+  /* Sidebar */
+  .sidebar{ background: var(--surface); border-right: 1px solid var(--line); display: flex; flex-direction: column; padding: 24px 20px; height: 100%; overflow: hidden; backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); z-index: 20; box-shadow: 10px 0 30px rgba(0,0,0,0.1);}
+  .sidebar-brand{ font-weight:700; font-size:20px; color: var(--text); margin-bottom:28px; display:flex; align-items:center; gap:12px; }
+  .sidebar-brand .dot{ width:10px; height:10px; border-radius:50%; background:var(--primary); animation: ringPulse 2s infinite; }
+  .room-block{ background: var(--surface-alt); border: 1px solid var(--line); border-radius:20px; padding:20px; margin-bottom:24px; position:relative; box-shadow: 0 8px 20px rgba(0,0,0,0.04); }
+  .room-block .label{ font-weight:700; font-size:11px; color: var(--primary); letter-spacing:0.1em; margin-bottom:8px; text-transform: uppercase; }
+  .room-block .value{ font-weight:700; font-size:20px; color: var(--text); word-break:break-all; }
+  .admin-badge{ position:absolute; top:20px; right:20px; font-size:10px; font-weight:700; background:#EC4899; color:#fff; padding:4px 10px; border-radius:12px; display:none; box-shadow: 0 4px 12px rgba(236, 72, 153, 0.4); }
+  .online-count{ font-size:13px; color: var(--text-dim); margin-top:12px; display:flex; align-items:center; gap:8px; font-weight: 600;}
+  .online-count .dot{ width:8px; height:8px; border-radius:50%; background:var(--accent); animation: ringPulse 2.5s infinite; }
+  .members-label{ font-weight:700; font-size:12px; color:var(--text-dim); letter-spacing:0.05em; margin-bottom:12px; text-transform: uppercase; }
+  .members-list{ flex:1; overflow-y:auto; display:flex; flex-direction:column; gap:6px; min-height: 0; padding-right: 4px; }
+  .member-row{ display:flex; align-items:center; gap:14px; padding:10px 12px; border-radius:16px; font-size:14px; position: relative; transition: background 0.2s, transform 0.2s; }
+  .member-row:hover{ background: var(--surface-alt); transform: translateX(4px); }
+  .member-avatar{ width:38px; height:38px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:14px; color:var(--scoop-bg); flex-shrink:0; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+  .member-name{ color: var(--text); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-weight: 600;}
+  .member-name.me{ color: var(--primary); font-weight:700; }
+  .kick-btn{ background:var(--red); color:#fff; border:none; border-radius:8px; font-size:11px; font-weight:bold; padding:6px 10px; cursor:pointer; margin-left:auto; display:none; transition: transform 0.1s; }
+  .kick-btn:active{ transform: scale(0.9); }
+  .member-status{ width:10px; height:10px; border-radius:50%; background:var(--accent); margin-left:auto; flex-shrink:0; box-shadow: 0 0 10px var(--accent); }
+  .leave-btn{ margin-top:20px; background:var(--surface-alt); border:1px solid var(--line); color: var(--text); font-weight:700; font-size:15px; padding:16px; border-radius:16px; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:10px; flex-shrink: 0; transition: all 0.2s; box-shadow: 0 4px 15px rgba(0,0,0,0.05);}
+  .leave-btn:hover{ border-color: var(--red); color: var(--red); background: rgba(239, 68, 68, 0.1); transform: translateY(-2px); }
+  .scrim{ display: none; }
+
+  /* Main Chat Window */
+  .main{ display: flex; flex-direction: column; height: 100%; min-height: 0; min-width: 0; position: relative; overflow: hidden; }
+
+  /* ================== PERFECTION 3D CURVE HEADER ================== */
+  .chat-header {
+    display: flex; justify-content: space-between; align-items: flex-start;
+    padding: 0; background: transparent; z-index: 10; flex-shrink: 0;
+  }
+  .header-left { display: flex; align-items: center; gap: 16px; padding: 30px 30px; }
+  .menu-toggle {
+    display: flex; align-items: center; background: none; border: none; color: var(--text-header);
+    font-size: 24px; cursor: pointer; padding: 0; transition: transform 0.2s;
+  }
+  .menu-toggle:hover { transform: translateX(-4px); }
+  
+  .header-room-avatar {
+    width: 52px; height: 52px; border-radius: 50%;
+    background: var(--surface); display: flex; align-items: center;
+    justify-content: center; font-weight: 700; font-size: 20px;
+    color: var(--primary); position: relative; box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  }
+  .header-status-dot {
+    position: absolute; top: 0px; right: 0px; width: 14px; height: 14px; background: #10B981;
+    border: 3px solid var(--bg-gradient-3); border-radius: 50%;
+  }
+  
+  .header-text-block { display: flex; flex-direction: column; }
+  .header-text-block .title { color: var(--text-header); font-weight: 700; font-size: 19px; letter-spacing: 0.02em; }
+  .header-text-block .subtitle { color: rgba(255,255,255,0.8); font-size: 13px; font-weight: 600; transition: color 0.3s; margin-top: 2px;}
+  .header-text-block .subtitle.live { color: #10B981; }
+  .header-text-block .subtitle.down { color: #FCA5A5; }
+
+  /* Inline Online Members List */
+  .header-text-block .online-users-list {
+    color: var(--accent);
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 4px;
+    max-width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* THE MAGICAL 3D SCOOP */
+  .header-right-scoop {
+    display: flex; gap: 12px; background: var(--scoop-bg);
+    padding: 30px 40px 30px 30px; border-bottom-left-radius: 50px;
+    box-shadow: -15px 15px 40px rgba(0,0,0,0.15); 
+    position: relative; z-index: 10;
+  }
+  .header-right-scoop::before {
+    content: ''; position: absolute; top: 0; left: -40px; 
+    width: 40px; height: 40px; background: transparent;
+    border-top-right-radius: 40px; box-shadow: 20px -20px 0 20px var(--scoop-bg);
+    pointer-events: none;
+  }
+  
+  .circ-btn {
+    width: 48px; height: 48px; border-radius: 50%;
+    border: 1.5px solid var(--text-dim); background: transparent;
+    color: var(--text); display: flex; align-items: center;
+    justify-content: center; cursor: pointer; transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .circ-btn svg { stroke-width: 1.5px; opacity: 0.7; width: 22px; height: 22px; }
+  .circ-btn:hover { background: var(--surface-alt); transform: scale(1.1); border-color: var(--text); box-shadow: 0 8px 20px rgba(0,0,0,0.08);}
+  .circ-btn:hover svg { opacity: 1; stroke-width: 2px;}
+
+  /* Loading indicator */
+  .loading-older { text-align: center; font-size: 12px; font-weight: 700; color: rgba(255,255,255,0.8); margin: 15px 0; display: none; text-transform: uppercase; letter-spacing: 0.1em; animation: pulse 1.5s infinite; }
+  .loading-older.active { display: block; }
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+  
+  /* Unread Divider */
+  .unread-divider {
+    text-align: center; margin: 20px 0; display: flex; align-items: center; justify-content: center; 
+    gap: 15px; color: #FCA5A5; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; 
+  }
+  .unread-divider::before, .unread-divider::after { content: ''; height: 1px; flex: 1; background: #FCA5A5; opacity: 0.4; }
+
+  /* Message Stream */
+  .messages { 
+    flex: 1 1 0%; min-height: 0; overflow-y: auto; overflow-x: hidden; 
+    padding: 0 30px 20px 30px; display: flex; flex-direction: column; gap: 20px; 
+    -webkit-overflow-scrolling: touch; scroll-behavior: auto; 
+  }
+  .msg-empty{ margin:auto; text-align:center; color: var(--text-header); font-size:15px; font-weight: 600; background: rgba(0,0,0,0.2); padding: 12px 24px; border-radius: 30px; backdrop-filter: blur(10px); }
+  
+  /* iMessage Swipe Time logic */
+  .msg-row { 
+    display:flex; flex-direction:column; max-width:75%; flex-shrink: 0; position: relative; 
+    perspective: 1000px; transform: translateX(0); transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+  }
+  .messages.show-times .msg-row { transform: translateX(-60px); }
+  
+  .msg-row.own{ align-self:flex-end; align-items:flex-end; animation: msgPopOwn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both; }
+  .msg-row.other{ align-self:flex-start; align-items:flex-start; flex-direction:row; gap:12px; max-width:80%; animation: msgPopOther 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;}
+  .msg-row.other .msg-col{ display:flex; flex-direction:column; align-items:flex-start; min-width:0; }
+  .msg-row.other .member-avatar{ margin-top:2px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); background: var(--surface) !important; color: var(--primary) !important;}
+  .msg-row.system{ align-self:center; max-width:90%; animation: msgPopSystem 0.4s ease both; }
+  
+  .msg-meta{ font-size:12px; color: rgba(255,255,255,0.7); margin-bottom:8px; display:flex; gap:10px; align-items: center; padding: 0 6px;}
+  .msg-meta .who.own{ color: #FFFFFF; font-weight:700; }
+  .msg-meta .who.other{ color: #FFFFFF; font-weight:700; }
+  
+  .timestamp-drawer {
+    position: absolute; right: -70px; top: 50%; transform: translateY(-50%); 
+    font-size: 11px; font-weight: 600; color: rgba(255,255,255,0.9); 
+    opacity: 0; transition: opacity 0.3s; white-space: nowrap; pointer-events: none;
+  }
+  .messages.show-times .timestamp-drawer { opacity: 1; }
+  .msg-row.own .timestamp-drawer { right: -65px; }
+
+  /* Pending message visuals */
+  .msg-row.pending .msg-bubble { opacity: 0.65; border: 1px dashed rgba(255,255,255,0.4); }
+  .msg-row.pending .msg-bubble::after { content: '🕒'; position: absolute; bottom: -18px; right: 8px; font-size: 12px; opacity: 0.8;}
+  
+  .msg-bubble{ 
+    padding: 14px 20px; border-radius: 24px; font-size: 16px; line-height: 1.5; 
+    word-break: break-word; overflow-wrap: break-word; white-space: pre-wrap; 
+    position: relative; cursor: pointer; user-select: none; -webkit-user-select: none; 
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.2s; 
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15); font-weight: 500;
+  }
+  .msg-bubble:hover { transform: translateY(-4px) scale(1.02); box-shadow: 0 15px 35px rgba(0,0,0,0.25); }
+  .msg-bubble:active{ transform: translateY(0) scale(0.98); }
+  
+  .msg-row.own .msg-bubble{ background: var(--bubble-own); color: var(--bubble-own-text); border-bottom-right-radius:6px; }
+  .msg-row.other .msg-bubble{ background: var(--bubble-other); color: var(--bubble-other-text); border-bottom-left-radius:6px; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.15); }
+  
+  .msg-row.system .msg-bubble{ background: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.1); color: #FFF; font-size:13px; font-weight: 600; text-align:center; padding:8px 18px; border-radius:30px; cursor: default; box-shadow: none; backdrop-filter: blur(10px);}
+  .msg-row.deleted .msg-bubble { background: transparent; border: 2px dashed rgba(255,255,255,0.3); color: rgba(255,255,255,0.6); font-style: italic; box-shadow: none; }
+  
+  /* Swipe-to-Reply Icon Hint */
+  .swipe-reply-hint { position: absolute; top: 50%; right: -40px; transform: translateY(-50%); font-size: 24px; opacity: 0; transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); pointer-events: none; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2)); }
+  .msg-row.own .swipe-reply-hint { right: auto; left: -40px; transform: translateY(-50%) scaleX(-1); }
+  
+  /* ================== QUOTE / REPLY BOX ================== */
+  .quote-box { 
+    margin-bottom: 8px; padding: 6px 10px; background: rgba(0,0,0,0.08); 
+    border-left: 3px solid var(--primary); border-radius: 8px; cursor: pointer; 
+    transition: background 0.2s; white-space: nowrap; overflow: hidden; 
+    text-overflow: ellipsis; display: block; max-width: 100%;
+  }
+  .quote-box:hover { background: rgba(0,0,0,0.15); }
+  .msg-row.other .quote-box { background: rgba(255,255,255,0.15); border-left-color: #FFF; }
+  .msg-row.other .quote-box:hover { background: rgba(255,255,255,0.25); }
+  .quote-box b { display: block; font-size: 11.5px; margin-bottom: 2px; font-weight: 700; opacity: 0.9; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+  .quote-box span { font-size: 13px; opacity: 0.8; }
+
+  /* Read Receipts */
+  .read-receipt { font-size: 12px; font-weight: bold; margin-left: 8px; opacity: 0.5; color: var(--primary); }
+  .read-receipt.all { opacity: 1; text-shadow: 0 0 10px var(--primary-glow);}
+  
+  /* Reactions Display */
+  .reaction-badges { display: flex; gap: 8px; margin-top: -12px; z-index: 2; position: relative; padding: 0 12px; flex-wrap: wrap; }
+  .r-badge { background: var(--surface-alt); border: 1px solid var(--line); border-radius: 20px; padding: 4px 10px; font-size: 14px; display: flex; align-items: center; gap: 6px; cursor: pointer; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), background 0.2s; backdrop-filter: blur(10px);}
+  .r-badge:hover { transform: scale(1.15); }
+  .r-badge.active { background: var(--primary); border-color: var(--primary); color: var(--text-header); box-shadow: 0 8px 20px var(--primary-glow); }
+  .r-badge.active .r-count { color: var(--text-header); }
+  .r-count { font-size: 12px; font-weight: 700; color: var(--text-dim); }
+  
+  /* Hover Actions Menu */
+  .action-menu { position: absolute; top: 12px; display: flex; gap: 8px; background: var(--surface-alt); border: 1px solid var(--line); padding: 8px; border-radius: 30px; box-shadow: 0 15px 35px rgba(0,0,0,0.2); opacity: 0; pointer-events: none; transform: translateY(15px); transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275); z-index: 10; backdrop-filter: blur(20px);}
+  .msg-row.own .action-menu { right: 100%; margin-right: 16px; }
+  .msg-row.other .action-menu { left: 100%; margin-left: 16px; }
+  .msg-row:hover .action-menu { opacity: 1; pointer-events: auto; transform: translateY(0); }
+  .a-btn { background: var(--surface); border: 1px solid var(--line); font-size: 18px; cursor: pointer; width: 38px; height: 38px; border-radius: 50%; transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 10px rgba(0,0,0,0.05);}
+  .a-btn:hover { background: var(--scoop-bg); transform: scale(1.2); box-shadow: 0 8px 20px rgba(0,0,0,0.1);}
+  
+  /* Reaction Picker */
+  .react-picker { position: absolute; bottom: 100%; margin-bottom: 12px; background: var(--surface-alt); border: 1px solid var(--line); padding: 10px; border-radius: 40px; display: none; gap: 8px; box-shadow: 0 20px 40px rgba(0,0,0,0.25); animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); backdrop-filter: blur(20px);}
+  .react-picker.open { display: flex; }
+  .react-picker button { font-size: 26px; padding: 6px; width: 48px; height: 48px; }
+
+  /* Animated Typing Bubble */
+  .typing-indicator-row { display: none; transform: none !important;}
+  .typing-indicator-row.active { display: flex; }
+  .typing-bubble { display: flex; gap: 8px; padding: 18px 24px !important; align-items: center; justify-content: center; min-height: 54px; cursor: default; }
+  .typing-dot { width: 10px; height: 10px; background: #FFF; border-radius: 50%; animation: typingBounce 1.4s infinite ease-in-out both; opacity: 0.9; box-shadow: 0 2px 5px rgba(0,0,0,0.2);}
+  .typing-dot:nth-child(1) { animation-delay: -0.32s; }
+  .typing-dot:nth-child(2) { animation-delay: -0.16s; }
+  @keyframes typingBounce { 0%, 80%, 100% { transform: translateY(0) scale(0.8); opacity:0.5; } 40% { transform: translateY(-8px) scale(1.2); opacity:1;} }
+
+  /* FLOATING COMPOSER & REPLY BANNER FIXES */
+  .reply-banner { 
+    display: none; align-items: center; justify-content: space-between; 
+    padding: 10px 16px 20px 16px; background: var(--scoop-bg); 
+    font-size: 13px; color: var(--text); border-top-left-radius: 20px; border-top-right-radius: 20px; 
+    margin: 0 20px -16px 20px; box-shadow: 0 -10px 20px rgba(0,0,0,0.05); z-index: 9;
+  }
+  .reply-banner.active { display: flex; animation: fadeSlideUp 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+  .reply-banner-text { flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding-right: 12px; }
+  .reply-banner b { color: var(--primary); font-weight: 700; margin-left: 4px;}
+  .reply-banner-close { cursor: pointer; font-weight: bold; font-size: 14px; background: var(--surface-alt); width: 26px; height: 26px; display:flex; align-items:center; justify-content:center; border-radius: 50%; border: 1px solid var(--line); transition: transform 0.2s; flex-shrink: 0;}
+  .reply-banner-close:hover { transform: scale(1.1); }
+
+  .composer{ display: flex; align-items: flex-end; gap: 16px; padding: 16px 24px 30px; background: transparent; flex-shrink: 0; z-index: 10; }
+  .input-wrapper{ flex: 1; background: var(--scoop-bg); border-radius: 36px; padding: 12px 24px; display: flex; align-items: center; box-shadow: 0 15px 35px rgba(0,0,0,0.1); transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);}
+  .input-wrapper:focus-within { transform: translateY(-2px); box-shadow: 0 20px 40px var(--primary-glow); }
+  .composer textarea{ width: 100%; resize: none; background: transparent; border: none; color: var(--text); font-family: var(--sans); font-size: 17px; outline: none; max-height: 140px; line-height: 1.5; padding: 6px 0; margin: 0; display: block; box-sizing: border-box; font-weight: 500;}
+  
+  .send-btn{ background: var(--scoop-bg); color: var(--primary); border: none; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; flex-shrink: 0; box-shadow: 0 15px 35px rgba(0,0,0,0.1); transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); padding-left: 4px;}
+  .send-btn svg { width: 26px; height: 26px; fill: var(--primary); transition: transform 0.2s; }
+  .send-btn:hover { transform: translateY(-4px) scale(1.05); box-shadow: 0 20px 40px var(--primary-glow); }
+  .send-btn:hover svg { transform: translateX(2px) scale(1.1); }
+  .send-btn:active{ transform: scale(0.95); }
+
+  /* Responsive Rules */
+  @media (min-width: 1025px){ .messages{ padding-left:calc((100% - 900px) / 2); padding-right:calc((100% - 900px) / 2); } .composer { max-width: 900px; margin: 0 auto; width: 100%; } .reply-banner { max-width: 860px; margin: 0 auto -16px auto; } }
+  @media (max-width: 1024px) and (min-width: 769px){ .chat-shell{ grid-template-columns: 280px 1fr; } }
+  @media (max-width: 768px){
+    .chat-shell{ grid-template-columns: 1fr; }
+    .sidebar{ position: fixed; top: 0; left: 0; bottom: 0; width: min(320px, 85vw); z-index: 30; transform: translateX(-100%); transition: transform .4s cubic-bezier(.2,.8,.3,1); box-shadow: 20px 0 60px rgba(0,0,0,0.3); padding-top: max(24px, env(safe-area-inset-top)); padding-bottom: max(24px, env(safe-area-inset-bottom)); }
+    .sidebar.open{ transform: translateX(0); }
+    .scrim{ display: none; position: fixed; inset: 0; background: rgba(15, 23, 42, 0.7); backdrop-filter: blur(8px); z-index: 25; opacity: 0; transition: opacity .4s ease; }
+    .scrim.open{ display: block; opacity: 1; }
+    .msg-row{ max-width: 88%; } .msg-row.other{ max-width: 92%; }
+    .action-menu { opacity: 1; position: static; box-shadow: none; padding: 0; background: transparent; transform: none; pointer-events: auto; margin-top: 8px; display: none; border: none; backdrop-filter: none;}
+    .msg-row.show-actions .action-menu { display: flex; }
+    
+   .header-left { padding: 16px 10px; gap: 8px; }
+    .header-room-avatar { width: 40px; height: 40px; font-size: 16px; }
+    
+    /* Reduced padding and gaps to fit all buttons */
+    .header-right-scoop { padding: 16px 12px 18px 12px; gap: 6px; border-bottom-left-radius: 30px; box-shadow: -10px 10px 30px rgba(0,0,0,0.1); }
+    .header-right-scoop::before { left: -30px; width: 30px; height: 30px; border-top-right-radius: 30px; box-shadow: 15px -15px 0 15px var(--scoop-bg); }
+    
+    /* Shrink buttons slightly and hide Fullscreen on mobile */
+    .circ-btn { width: 36px; height: 36px; }
+    #fullscreenBtn { display: none; }
+    .circ-btn svg { width: 18px; height: 18px; }
+    
+    .header-text-block .online-users-list { max-width: 150px; }
+
+    .messages { padding: 0 16px 16px 16px; }
+    .composer { padding: 10px 12px 16px; gap: 10px;}
+    .input-wrapper { padding: 8px 16px; }
+    .send-btn { width: 50px; height: 50px; }
+    .reply-banner { margin: 0 12px -16px 12px; padding: 8px 14px 18px 14px; }
+  }
+
+/* Quick join: fixed identity and room; no username/IP prompts */
+#landing .field, #landing #nextBtn, #landing #backBtn, #landing .step-dots,
+#landing .join-sub { display:none !important; }
+
+  /* MYChat usability upgrade */
+  .mychat-tools{display:flex;align-items:center;gap:7px}
+  .mychat-search-toggle{border:1px solid var(--border,rgba(127,127,127,.25));background:var(--surface,rgba(127,127,127,.08));color:inherit;border-radius:12px;width:40px;height:40px;display:grid;place-items:center;cursor:pointer;transition:transform .18s,background .18s}
+  .mychat-search-toggle:hover{transform:translateY(-1px);background:rgba(120,120,120,.16)}
+  .mychat-search-panel{display:none;align-items:center;gap:9px;padding:10px 14px;background:var(--panel,rgba(120,120,120,.08));border-bottom:1px solid rgba(127,127,127,.18)}
+  .mychat-search-panel.open{display:flex}
+  .mychat-search-panel input{min-width:0;flex:1;padding:10px 12px;border:1px solid rgba(127,127,127,.25);border-radius:12px;background:var(--input-bg,rgba(127,127,127,.08));color:inherit;outline:none;font:inherit}
+  .mychat-search-panel input:focus{border-color:var(--primary,#7c5cff);box-shadow:0 0 0 3px rgba(124,92,255,.12)}
+  .mychat-tool-btn{border:0;border-radius:10px;padding:9px 11px;background:rgba(127,127,127,.14);color:inherit;cursor:pointer;font:inherit;white-space:nowrap}
+  .mychat-search-count{font-size:12px;opacity:.72;white-space:nowrap;min-width:36px;text-align:center}
+  .msg-row.mychat-search-match .msg-bubble{outline:2px solid rgba(124,92,255,.58);outline-offset:2px}
+  .msg-row.mychat-search-current .msg-bubble{outline:3px solid var(--primary,#7c5cff);outline-offset:3px}
+  @media(max-width:520px){.mychat-search-panel{gap:5px;padding:8px}.mychat-tool-btn{padding:9px 8px}.mychat-search-count{min-width:28px;font-size:11px}.mychat-search-toggle{width:36px;height:36px}}
+
+  /* MYChat Plus feature pack */
+  .mychat-feature-btn{border:1px solid var(--border,rgba(127,127,127,.25));background:var(--surface,rgba(127,127,127,.08));color:inherit;border-radius:12px;min-width:38px;height:38px;padding:0 10px;display:inline-flex;align-items:center;justify-content:center;gap:6px;cursor:pointer;font:inherit}
+  .mychat-feature-btn:hover{background:rgba(124,92,255,.14)}
+  .mychat-pinbar{display:none;align-items:center;gap:9px;padding:9px 14px;background:rgba(124,92,255,.10);border-bottom:1px solid rgba(124,92,255,.22);font-size:13px}
+  .mychat-pinbar.active{display:flex}.mychat-pintext{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;cursor:pointer}
+  .mychat-file-preview{max-width:min(300px,65vw);max-height:260px;border-radius:10px;display:block;margin-top:5px}.mychat-attachment{display:inline-flex;align-items:center;gap:8px;padding:10px;border:1px solid rgba(127,127,127,.25);border-radius:10px;text-decoration:none;color:inherit;margin-top:5px;max-width:260px;overflow-wrap:anywhere}
+  .mychat-recording{display:none;color:#ef4444;font-size:12px;font-weight:700;align-items:center;gap:5px}.mychat-recording.active{display:inline-flex}
+  .mychat-profile-chip{font-size:11px;opacity:.75;margin-left:6px}.msg-row.is-pinned .msg-bubble{box-shadow:0 0 0 2px rgba(124,92,255,.55)}
+  @media(max-width:520px){.mychat-feature-btn{min-width:34px;height:36px;padding:0 8px}.mychat-feature-label{display:none}.mychat-pinbar{padding:8px 10px}}
+
+</style>
+</head>
+<body>
+<div id="app">
+  <canvas id="bgCanvas"></canvas>
+
+  <div id="landing">
+    <div class="card-scene">
+      <div class="join-card" id="joinCard">
+        <div class="step-panel" id="stepUsername">
+          <div class="brand-row">
+            <div class="brand-mark">[ MY<span>CHAT</span> ]</div>
+            <div class="orb3d"><div class="cube"><div class="face f1"></div><div class="face f2"></div><div class="face f3"></div><div class="face f4"></div><div class="face f5"></div><div class="face f6"></div></div></div>
+          </div>
+          <p class="join-sub">Welcome. First, tell us who you are.</p>
+          <div class="step-dots"><span class="sd active"></span><span class="sd"></span></div>
+          <div class="field">
+            <label for="username">USERNAME</label>
+            <input id="username" type="text" placeholder="e.g. nullpointer" maxlength="24" autocomplete="off">
+          </div>
+          <button class="connect-btn" id="nextBtn">NEXT →</button>
+          <div class="join-error" id="joinErrorStep1"></div>
+        </div>
+
+        <div class="step-panel hidden" id="stepRoom">
+          <div class="brand-row">
+            <div class="brand-mark">[ MY<span>CHAT</span> ]</div>
+            <div class="pulse-dot"></div>
+          </div>
+          <p class="join-sub">Hey <b id="helloName" style="color:var(--primary)">there</b> — now enter a room code to join.</p>
+          <div class="step-dots"><span class="sd"></span><span class="sd active"></span></div>
+          <div class="field">
+            <label for="roomip">ROOM CODE</label>
+            <input id="roomip" type="text" placeholder="e.g. 192.168.0.42" maxlength="40" autocomplete="off">
+            <div class="field-hint">Anyone entering this code will share the room.</div>
+          </div>
+          <button class="connect-btn" id="connectBtn">CONNECT →</button>
+          <div id="loginPwaHint" style="margin-top:12px;text-align:center;font-size:11px;line-height:1.45;color:var(--text-dim);">
+            Install MYChat for a faster app-like experience and enable notifications for new messages.
+          </div>
+          <button class="back-link" id="backBtn">← back to username</button>
+          <div class="join-error" id="joinError"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="chat">
+    <div class="chat-shell">
+      <div class="scrim" id="scrim"></div>
+      <div class="sidebar" id="sidebar">
+        <div class="sidebar-brand"><span class="dot"></span> MYChat</div>
+        <div class="room-block">
+          <div class="admin-badge" id="adminBadge">ADMIN</div>
+          <div class="label">ROOM</div>
+          <div class="value" id="roomLabel">—</div>
+          <div class="online-count"><span class="dot"></span><span id="onlineCount">1 online</span></div>
+        </div>
+        <div class="members-label">MEMBERS</div>
+        <div class="members-list" id="membersList"></div>
+        <button class="leave-btn" id="leaveBtn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+          Leave Room
+        </button>
+      </div>
+
+      <div class="main">
+        
+        <div class="chat-header">
+          <div class="header-left">
+            <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            </button>
+            <div class="header-room-avatar" id="headerRoomAvatar">?<div class="header-status-dot"></div></div>
+            <div class="header-text-block">
+              <div class="title" id="roomLabel2">—</div>
+              <div class="subtitle" id="connStatus">connecting...</div>
+              <div class="online-users-list" id="topOnlineUsers"></div>
+            </div>
+          </div>
+          <div class="header-right-scoop">
+            <button class="mychat-feature-btn" id="mychatProfileBtn" title="Edit profile" aria-label="Edit profile" style="display: none;">👤</button>
+            <button class="mychat-search-toggle" id="mychatSearchToggle" title="Search messages (Ctrl+F)" aria-label="Search messages"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg></button>
+            <button class="circ-btn" id="themeToggle" title="Toggle Dark Mode">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+            
+            <button class="circ-btn" id="fullscreenBtn" title="Toggle Fullscreen">
+              <svg id="iconExpand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>
+              </svg>
+              <svg id="iconCompress" style="display:none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"></path>
+              </svg>
+            </button>
+            
+            <button class="circ-btn" id="clearBtn" title="Clear Chat">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="mychat-pinbar" id="mychatPinbar"><span>📌</span><b>Pinned</b><span class="mychat-pintext" id="mychatPinText" title="Jump to pinned message">No pinned message</span><button class="mychat-feature-btn" id="mychatUnpinBtn" type="button" title="Unpin message" style="display:none">✕</button></div>
+        <div class="mychat-search-panel" id="mychatSearchPanel" role="search" aria-label="Search chat messages">
+          <input id="mychatSearchInput" type="search" placeholder="Search messages in this room…" autocomplete="off" aria-label="Search messages">
+          <span class="mychat-search-count" id="mychatSearchCount">0 results</span>
+          <button class="mychat-tool-btn" id="mychatSearchNext" type="button" title="Next result (Enter)">Next ↓</button>
+          <button class="mychat-tool-btn" id="mychatSearchClose" type="button" aria-label="Close search">✕</button>
+        </div>
+        <div class="messages" id="messages">
+          <div class="loading-older" id="loadingOlder">Fetching history...</div>
+          <div class="msg-empty" id="emptyMsg">Start of conversation</div>
+          
+          <div id="typingBubble" class="msg-row other typing-indicator-row">
+            <div class="msg-col">
+              <div class="msg-meta"><span class="who other" id="typingName"></span></div>
+              <div class="msg-bubble typing-bubble">
+                <div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reply-banner" id="actionBanner">
+          <div class="reply-banner-text">
+            <span id="actionBannerType">Replying to</span> <b id="actionBannerName">User</b>: 
+            <span id="actionBannerText" style="font-style:italic">...</span>
+          </div>
+          <div class="reply-banner-close" id="cancelActionBtn">✕</div>
+        </div>
+
+        <div class="composer" id="composer">
+          <input id="mychatFileInput" type="file" accept="image/*,audio/*,video/*,.pdf,.txt,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.zip,.csv" hidden>
+          <button class="mychat-feature-btn" id="mychatAttachBtn" type="button" title="Attach image or file" aria-label="Attach image or file">＋</button>
+          <button class="mychat-feature-btn" id="mychatRecordBtn" type="button" title="Record voice message" aria-label="Record voice message">🎙️</button>
+          <span class="mychat-recording" id="mychatRecordingLabel">● Recording</span>
+          <div class="input-wrapper">
+            <textarea id="msgInput" placeholder="Message..." rows="1"></textarea>
+          </div>
+          <button class="send-btn" id="sendBtn" aria-label="Send">
+            <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Scripts Moved To End of Body to Speed Up Application Load Time -->
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+/* MYChat push bridge.
+   - Android app (Capacitor): OneSignal native SDK, works when the app is closed
+   - Web browser: OneSignal Web Push (needs HTTPS hosting + OneSignalSDKWorker.js)
+   - Pushes are SENT through a small server (Cloudflare Worker) so no secret key lives in this page. */
+(function(){
+  var cap = window.Capacitor;
+  var isNative = !!(cap && cap.isNativePlatform && cap.isNativePlatform());
+  var OS_APP_ID = '__ONESIGNAL_APP_ID__';
+  var PUSH_ENDPOINT = '__PUSH_ENDPOINT__';
+  function real(v){ return typeof v === 'string' && v.length > 8 && v.indexOf('__') !== 0; }
+  var pushConfigured = real(OS_APP_ID) && real(PUSH_ENDPOINT);
+  window.MYChatNative = {
+    isNative: isNative,
+    pushConfigured: pushConfigured,
+    requestPermission: function(){ return Promise.resolve(false); },
+    notify: function(){},
+    setRoom: function(){},
+    leaveRoom: function(){},
+    wrapRef: function(ref){ return ref; }
+  };
+  var pendingTags = null;
+
+  function bodyOf(m){
+    return m.type === 'audio' ? '🎙️ Voice message' : m.type === 'image' ? '🖼️ Image' : m.type === 'file' ? '📎 ' + (m.fileName || 'Attachment') : String(m.text || 'New message').slice(0, 160);
+  }
+  /* Ask the server to send the push (works for both app and browser senders). */
+  function sendPush(m, ctx){
+    if(!pushConfigured || !ctx || !ctx.room) return;
+    try{
+      fetch(PUSH_ENDPOINT, {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({ room: ctx.room, user: ctx.user, body: bodyOf(m) })
+      }).catch(function(e){ console.warn('push send failed', e); });
+    }catch(e){ console.warn('push send error', e); }
+  }
+  window.MYChatNative.wrapRef = function(ref, getCtx){
+    try{
+      if(!pushConfigured || ref.__mychatWrapped) return ref;
+      var orig = ref.push.bind(ref);
+      ref.push = function(v){
+        try{ var c = getCtx(); if(v && !v.sys && v.user && c && v.user === c.user) sendPush(v, c); }catch(e){}
+        return orig.apply(null, arguments);
+      };
+      ref.__mychatWrapped = true;
+    }catch(e){}
+    return ref;
+  };
+
+  if(isNative){
+    /* ---------------- Android app ---------------- */
+    document.documentElement.classList.add('native-app');
+    var st = document.createElement('style');
+    st.textContent = '#pwaInstallBtn,#pushEnableBtn,#loginPwaHint{display:none !important;}';
+    document.head.appendChild(st);
+
+    var osReady = false;
+    var getOS = function(){ return window.plugins && window.plugins.OneSignal; };
+    var applyTagsNative = function(){
+      var OS = getOS();
+      if(!osReady || !OS || !pendingTags) return;
+      try{ OS.User.addTags(pendingTags); }catch(e){ console.warn('tag error', e); }
+    };
+    var initOSNative = function(tries){
+      var OS = getOS();
+      if(!OS){ if(tries < 40) setTimeout(function(){ initOSNative(tries + 1); }, 500); return; }
+      try{
+        OS.initialize(OS_APP_ID);
+        try{ OS.Notifications.addEventListener('foregroundWillDisplay', function(ev){ try{ ev.preventDefault(); }catch(_){} }); }catch(_){}
+        try{ OS.Notifications.requestPermission(true); }catch(_){}
+        osReady = true;
+        applyTagsNative();
+      }catch(e){ console.warn('OneSignal init error', e); }
+    };
+    if(pushConfigured) document.addEventListener('DOMContentLoaded', function(){ initOSNative(0); });
+
+    window.MYChatNative.setRoom = function(room, user){ pendingTags = {room: String(room), user: String(user)}; applyTagsNative(); };
+    window.MYChatNative.leaveRoom = function(){
+      pendingTags = null;
+      var OS = getOS();
+      try{ if(osReady && OS) OS.User.removeTags(['room', 'user']); }catch(e){}
+    };
+
+    /* Local notification fallback (only used when push is not configured) */
+    var LN = (cap.Plugins && cap.Plugins.LocalNotifications) || (cap.registerPlugin && cap.registerPlugin('LocalNotifications'));
+    var granted = false, nextId = 1;
+    var requestPermissionNative = async function(){
+      if(!LN) return false;
+      try{
+        var cur = await LN.checkPermissions();
+        if(cur.display !== 'granted') cur = await LN.requestPermissions();
+        granted = cur.display === 'granted';
+        if(granted){ try{ await LN.createChannel({id:'messages', name:'Messages', importance:5, visibility:1, vibration:true}); }catch(e){} }
+      }catch(e){ console.warn('Notification permission error', e); }
+      return granted;
+    };
+    window.MYChatNative.requestPermission = requestPermissionNative;
+    window.MYChatNative.notify = function(title, body, room){
+      if(pushConfigured || !LN || !granted) return;
+      try{ LN.schedule({ notifications: [{ id: (nextId++ % 2000000000), title: title, body: body, channelId: 'messages', extra: {room: room} }] }); }catch(e){ console.warn('notify error', e); }
+    };
+    document.addEventListener('DOMContentLoaded', function(){ requestPermissionNative(); });
+    return;
+  }
+
+  /* ---------------- Web browser ---------------- */
+  if(!pushConfigured) return;
+  var osWeb = null;
+  function applyTagsWeb(){
+    if(!osWeb || !pendingTags) return;
+    try{ osWeb.User.addTags(pendingTags); }catch(e){ console.warn('tag error', e); }
+  }
+  function hideBtn(){ var b = document.getElementById('pushEnableBtn'); if(b) b.style.display = 'none'; }
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  window.OneSignalDeferred.push(async function(OneSignal){
+    try{
+      var swUrl = new URL('OneSignalSDKWorker.js', location.href);
+      var scope = swUrl.pathname.replace(/[^\/]*$/, '');
+      await OneSignal.init({
+        appId: OS_APP_ID,
+        serviceWorkerPath: swUrl.pathname,
+        serviceWorkerParam: { scope: scope },
+        notifyButton: { enable: false },
+        allowLocalhostAsSecureOrigin: true
+      });
+      osWeb = OneSignal;
+      try{ OneSignal.Notifications.addEventListener('foregroundWillDisplay', function(ev){ try{ ev.preventDefault(); }catch(_){} }); }catch(_){}
+      if(OneSignal.Notifications.permission) hideBtn();
+      applyTagsWeb();
+    }catch(e){ console.warn('OneSignal web init error', e); }
+  });
+  var sdk = document.createElement('script');
+  sdk.src = 'https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js';
+  sdk.defer = true;
+  document.head.appendChild(sdk);
+
+  window.MYChatNative.requestPermission = async function(){
+    if(!osWeb){ alert('Notifications are still loading. Please try again in a few seconds.'); return false; }
+    try{
+      await osWeb.Notifications.requestPermission();
+      var ok = !!osWeb.Notifications.permission;
+      if(ok){ hideBtn(); applyTagsWeb(); }
+      return ok;
+    }catch(e){ console.warn('permission error', e); return false; }
+  };
+  window.MYChatNative.setRoom = function(room, user){ pendingTags = {room: String(room), user: String(user)}; applyTagsWeb(); };
+  window.MYChatNative.leaveRoom = function(){
+    pendingTags = null;
+    try{ if(osWeb) osWeb.User.removeTags(['room', 'user']); }catch(e){}
+  };
+})();
+</script>
+
+<script>
+(function(){
+  'use strict';
+
+  // --- Theme Initializer (Dark Mode Default) ---
+  if(localStorage.getItem('theme') !== 'light'){ document.documentElement.classList.add('dark-mode'); }
+  const SEND_ICON = '<svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>';
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyDZ8Kw-wsfZdpLpwtz6auhfjV17kx7-d_k",
+    authDomain: "ipchat-b0294.firebaseapp.com",
+    databaseURL: "https://ipchat-b0294-default-rtdb.firebaseio.com",
+    projectId: "ipchat-b0294",
+    storageBucket: "ipchat-b0294.firebasestorage.app",
+    messagingSenderId: "125747658592",
+    appId: "1:125747658592:web:0e73b45c565400bea1e805"
+  };
+
+  // Supabase is used only for media files; Firebase Realtime Database still stores chat messages.
+  // Replace these two placeholders with your Supabase Project URL and publishable/anon key.
+  const SUPABASE_URL = 'https://ziurlvvbixdhfkwtfyyb.supabase.co';
+  const SUPABASE_ANON_KEY = 'sb_publishable_rLvOzh__NXb0FHIXVtPPTA__GZ0tmRZ';
+  const SUPABASE_BUCKET = 'mychat-media';
+  let supabaseClient = null;
+  try {
+    if (window.supabase && SUPABASE_URL.startsWith('https://') && !SUPABASE_ANON_KEY.startsWith('PASTE_')) {
+      supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+    }
+  } catch (supabaseError) { console.error('Supabase initialization failed:', supabaseError); }
+
+  let db = null; let firebaseReady = false;
+  try{
+    if(firebaseConfig.apiKey && firebaseConfig.apiKey.indexOf('PASTE_') === -1){
+      firebase.initializeApp(firebaseConfig);
+      db = firebase.database();
+      firebaseReady = true;
+    }
+  }catch(e){ console.error('Firebase init failed:', e); }
+
+  let username = '';
+  let roomKey = '';
+  let safeRoom = '';
+  let messagesRef = null;
+  let membersRef = null;
+  let myMemberRef = null;
+  let settingsRef = null;
+  let liveQuery = null;
+  
+  let unreadCount = 0;
+  let currentMembersCount = 1;
+  let roomAdmin = null;
+  let isSuperAdmin = false; 
+  let isOnline = navigator.onLine;
+
+  // Background Websocket Pre-Warmer for Instant Login
+  if(firebaseReady){
+    try {
+        db.ref('.info/connected').on('value', () => {}); 
+    } catch(e){}
+  } 
+  
+  // Pending and Read state tracking
+  let pendingKeys = new Set();
+  let lastSeenTimestamp = 0;
+  let unreadDividerInserted = false;
+  
+  const PAGE_SIZE = 50;
+  let earliestKey = null;
+  let isLoadingOld = false;
+  let hasMoreMessages = true;
+  
+  let msgMap = {}; 
+  let activeAction = { type: null, id: null, user: null, text: null }; 
+
+  const EMOJIS = ['👍', '❤️', '😂', '😮', '😢', '🙏'];
+  const alertSound = new Audio('https://assets.mixkit.co/active_storage/sfx/2869/2869-preview.mp3'); 
+
+  const $ = (id) => document.getElementById(id);
+  const appEl = $('app'), landing = $('landing'), chat = $('chat');
+  const usernameInput = $('username'), roomInput = $('roomip');
+  const connectBtn = $('connectBtn'), joinError = $('joinError');
+  const roomLabel = $('roomLabel'), roomLabel2 = $('roomLabel2'), adminBadge = $('adminBadge');
+  const onlineCount = $('onlineCount'), membersList = $('membersList');
+  const messagesEl = $('messages'), msgInput = $('msgInput'), sendBtn = $('sendBtn');
+  const leaveBtn = $('leaveBtn'), clearBtn = $('clearBtn'), connStatus = $('connStatus');
+  const menuToggle = $('menuToggle'), sidebar = $('sidebar'), scrim = $('scrim');
+  const joinCard = $('joinCard'), nextBtn = $('nextBtn'), backBtn = $('backBtn');
+  const joinErrorStep1 = $('joinErrorStep1'), helloName = $('helloName');
+  const stepUsername = $('stepUsername'), stepRoom = $('stepRoom');
+  
+  const actionBanner = $('actionBanner'), cancelActionBtn = $('cancelActionBtn');
+  const actionBannerType = $('actionBannerType'), actionBannerName = $('actionBannerName'), actionBannerText = $('actionBannerText');
+  const typingBubble = $('typingBubble'), typingName = $('typingName');
+  const emptyMsg = $('emptyMsg'), loadingOlder = $('loadingOlder');
+  const fullscreenBtn = $('fullscreenBtn'), iconExpand = $('iconExpand'), iconCompress = $('iconCompress');
+
+  $('themeToggle').addEventListener('click', () => {
+    document.documentElement.classList.toggle('dark-mode');
+    localStorage.setItem('theme', document.documentElement.classList.contains('dark-mode') ? 'dark' : 'light');
+    if (window.startCanvasAnimation) window.startCanvasAnimation(); // Refresh particle colors
+  });
+
+  // Fullscreen Logic
+  fullscreenBtn.addEventListener('click', () => {
+    if (!document.fullscreenElement) {
+      document.documentElement.requestFullscreen().catch(()=>{});
+    } else {
+      document.exitFullscreen().catch(()=>{});
+    }
+  });
+
+  document.addEventListener('fullscreenchange', () => {
+    if (document.fullscreenElement) {
+      iconExpand.style.display = 'none';
+      iconCompress.style.display = 'block';
+    } else {
+      iconExpand.style.display = 'block';
+      iconCompress.style.display = 'none';
+    }
+  });
+
+  // Canvas Suspension & Visibility Hook
+  let isAnimRunning = true;
+  document.addEventListener('visibilitychange', () => {
+    if(!document.hidden) {
+      unreadCount = 0;
+      document.title = 'MYChat — Room-Based Messenger';
+      if(!isAnimRunning && window.startCanvasAnimation) window.startCanvasAnimation();
+      // Firebase listeners remain attached while the tab is in the background.
+    } else {
+      // Do not leave the room when the user switches tabs or locks their phone.
+      // Only pause the decorative animation to save battery.
+      isAnimRunning = false;
+    }
+  });
+
+  // Offline / Online Global Sync Logic
+  window.addEventListener('online', () => {
+    isOnline = true;
+    connStatus.textContent = 'Online';
+    connStatus.className = 'subtitle live';
+    if(window.syncPendingMessages) window.syncPendingMessages();
+    if(safeRoom && chat.style.display === 'block' && !messagesRef) {
+       attachMessageListeners();
+    }
+  });
+  
+  window.addEventListener('offline', () => {
+    isOnline = false;
+    connStatus.textContent = 'Offline (Pending)';
+    connStatus.className = 'subtitle down';
+  });
+  
+  window.syncPendingMessages = function() {
+    let pending = JSON.parse(localStorage.getItem('mychat_pending') || '[]');
+    if(pending.length === 0) return;
+    
+    let remaining = [];
+    pending.forEach(item => {
+        if (navigator.onLine && db) {
+            item.payload.ts = firebase.database.ServerValue.TIMESTAMP;
+            db.ref('rooms/' + item.room + '/messages').push(item.payload);
+            if(msgMap[item.key]) {
+                msgMap[item.key].remove();
+                delete msgMap[item.key];
+            }
+        } else {
+            remaining.push(item);
+        }
+    });
+    localStorage.setItem('mychat_pending', JSON.stringify(remaining));
+  };
+  
+  if (navigator.onLine) { setTimeout(window.syncPendingMessages, 1000); }
+
+  // 3D Tilt Logic for Login Card
+  landing.addEventListener('mousemove', (e) => {
+    if(window.innerWidth < 768 || joinCard.classList.contains('flipping')) return;
+    const rect = landing.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    const rotateX = ((y - centerY) / centerY) * -8; 
+    const rotateY = ((x - centerX) / centerX) * 8;
+    joinCard.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+  });
+  landing.addEventListener('mouseleave', () => {
+    if(!joinCard.classList.contains('flipping')) joinCard.style.transform = `rotateX(0) rotateY(0)`;
+  });
+
+  function safeId(raw){ return raw.trim().replace(/[.#$\[\]\/]/g, '_'); }
+  function escapeHtml(str){ const d = document.createElement('div'); d.textContent = str; return d.innerHTML; }
+  function initials(name){ return (name || '?').trim().slice(0,2).toUpperCase(); }
+  function fmtTime(ts){ return new Date(ts).toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'}); }
+  function avatarColor(name) {
+    let hash = 0; for(let i=0; i<name.length; i++) hash = name.charCodeAt(i) + ((hash << 5) - hash);
+    const c = (hash & 0x00FFFFFF).toString(16).toUpperCase();
+    return '#' + ('00000'.substring(0, 6 - c.length) + c);
+  }
+  
+  function updateHeaderAvatar(name) {
+    const avatar = $('headerRoomAvatar');
+    if(avatar) {
+      avatar.innerHTML = escapeHtml(initials(name)) + '<div class="header-status-dot"></div>';
+    }
+  }
+
+  nextBtn.addEventListener('click', goToStep2);
+  usernameInput.addEventListener('keydown', (e) => { if(e.key === 'Enter') goToStep2(); });
+  backBtn.addEventListener('click', goToStep1);
+
+  function flipTo(fromPanel, toPanel, afterSwap){
+    joinCard.classList.add('flipping');
+    joinCard.style.transform = `rotateX(0) rotateY(0)`; 
+    joinCard.classList.add('rotY90');
+    setTimeout(() => {
+      fromPanel.classList.add('hidden'); toPanel.classList.remove('hidden');
+      if(typeof afterSwap === 'function') afterSwap();
+      joinCard.classList.remove('rotY90'); joinCard.classList.add('rotYneg90');
+      void joinCard.offsetWidth; joinCard.classList.remove('rotYneg90');
+      setTimeout(() => joinCard.classList.remove('flipping'), 400); 
+    }, 280);
+  }
+
+  function goToStep2(){
+    joinErrorStep1.style.display = 'none';
+    const u = usernameInput.value.trim();
+    if(!u){ showStep1Error('Enter a username to continue.'); return; }
+    if(u.length > 24){ showStep1Error('Username is too long.'); return; }
+    helloName.textContent = u;
+    flipTo(stepUsername, stepRoom, () => setTimeout(() => roomInput.focus(), 60));
+  }
+  function goToStep1(){ joinError.style.display = 'none'; flipTo(stepRoom, stepUsername, () => setTimeout(() => usernameInput.focus(), 60)); }
+  function showStep1Error(text){ joinErrorStep1.textContent = text; joinErrorStep1.style.display = 'block'; }
+  function showJoinError(text){ joinError.textContent = text; joinError.style.display = 'block'; connectBtn.disabled = false; connectBtn.textContent = 'CONNECT →'; }
+
+  connectBtn.addEventListener('click', connect);
+
+  // Quick join defaults: no need to enter a name or room code.
+  usernameInput.value = '@';
+  roomInput.value = '2425';
+  stepUsername.classList.add('hidden');
+  stepRoom.classList.remove('hidden');
+  connectBtn.textContent = 'CONNECTING…';
+  connect();
+  roomInput.addEventListener('keydown', (e) => { if(e.key === 'Enter') connect(); });
+
+  function connect(){
+    username = usernameInput.value.trim();
+    try { localStorage.setItem('mychat_username', username); } catch(_) {}
+    roomKey = roomInput.value.trim();
+    try { localStorage.setItem('mychat_room', roomKey); } catch(_) {}
+    joinError.style.display = 'none';
+
+    if(!username){ goToStep1(); return; }
+    if(!roomKey){ showJoinError('Enter a room code.'); return; }
+
+    if (roomKey === '01') {
+      const pin = prompt("Admin Authentication Required. Enter PIN:");
+      if (pin === '2310') {
+        enterSuperAdminUI();
+        return;
+      } else {
+        showJoinError('Access Denied: Invalid Admin Credentials');
+        return;
+      }
+    }
+    
+    // Offline bypass
+    if (!navigator.onLine) {
+        safeRoom = safeId(roomKey);
+        roomAdmin = username; 
+        enterChatUI();
+        return;
+    }
+
+    if(!firebaseReady){ showJoinError('Firebase not connected.'); return; }
+    
+    connectBtn.disabled = true; connectBtn.textContent = 'CONNECTING…';
+    safeRoom = safeId(roomKey);
+
+    settingsRef = db.ref('rooms/' + safeRoom + '/settings');
+    settingsRef.once('value', snap => {
+      const settings = snap.val();
+      
+      if (settings) {
+        if (settings.banned && settings.banned[safeId(username)]) { showJoinError('You have been banned from this room.'); return; }
+        roomAdmin = settings.admin;
+      } else {
+        roomAdmin = username;
+        settingsRef.set({ admin: username });
+      }
+
+      messagesRef = window.MYChatNative.wrapRef(db.ref('rooms/' + safeRoom + '/messages'), function(){ return {user: username, room: safeRoom}; });
+      membersRef = db.ref('rooms/' + safeRoom + '/members');
+      myMemberRef = db.ref('rooms/' + safeRoom + '/members/' + safeId(username));
+
+      myMemberRef.set({ name: username, ts: firebase.database.ServerValue.TIMESTAMP, typing: false, avatar: myProfile.avatar, status: myProfile.status });
+      $('mychatProfileBtn').textContent = myProfile.avatar;
+      myMemberRef.onDisconnect().remove();
+
+      enterChatUI();
+    }, (error) => {
+      console.error('Could not join room:', error);
+      showJoinError('Could not join this room. Check your connection and Firebase database permissions, then try again.');
+    });
+  }
+
+  function enterSuperAdminUI(){
+    landing.style.display = 'none';
+    chat.style.display = 'block';
+    isSuperAdmin = true;
+    
+    roomLabel.textContent = 'SUPER ADMIN';
+    roomLabel2.textContent = 'Select a room';
+    updateHeaderAvatar('Admin');
+    
+    const topOnlineEl = $('topOnlineUsers');
+    if (topOnlineEl) topOnlineEl.textContent = '';
+    
+    adminBadge.style.display = 'block';
+    adminBadge.textContent = 'GOD MODE';
+    document.querySelector('.members-label').textContent = 'ALL ACTIVE ROOMS';
+    
+    emptyMsg.style.display = 'block';
+    emptyMsg.textContent = 'Select a room to monitor live';
+    
+    clearChatDOM();
+    syncViewport();
+
+    db.ref('.info/connected').on('value', (snap) => {
+      isOnline = snap.val() === true;
+      if(isOnline){ connStatus.textContent = 'Online'; connStatus.className = 'subtitle live'; } 
+      else { connStatus.textContent = 'Offline (Pending)'; connStatus.className = 'subtitle down'; }
+    });
+
+    db.ref('rooms').on('value', snap => {
+      const rooms = snap.val() || {};
+      renderSuperAdminRooms(rooms);
+    });
+  }
+
+  function renderSuperAdminRooms(rooms){
+    const entries = Object.keys(rooms);
+    onlineCount.textContent = entries.length + ' rooms total';
+    membersList.innerHTML = '';
+    
+    entries.forEach(rName => {
+      if (rName === '01') return; 
+
+      const row = document.createElement('div');
+      row.className = 'member-row';
+      row.style.cursor = 'pointer';
+      
+      const msgCount = rooms[rName].messages ? Object.keys(rooms[rName].messages).length : 0;
+      
+      let liveUsers = [];
+      if(rooms[rName].members) {
+        Object.keys(rooms[rName].members).forEach(k => {
+           liveUsers.push(rooms[rName].members[k].name || k);
+        });
+      }
+      let liveText = liveUsers.length > 0 ? liveUsers.join(', ') : 'None';
+      
+      row.innerHTML = `
+        <div class="member-avatar" style="background:var(--red)">DB</div>
+        <div style="display:flex; flex-direction:column; flex:1; min-width:0;">
+          <div class="member-name" style="font-weight:bold;">${escapeHtml(rName)}</div>
+          <div style="font-size:10px; color:var(--text-dim); margin-top:2px; line-height:1.4;">
+            ${msgCount} msgs<br>
+            <b>Live:</b> <span style="color:var(--accent)">${escapeHtml(liveText)}</span>
+          </div>
+        </div>
+        <button class="kick-btn" style="display:block; background:var(--red);" title="Nuke Room" onclick="nukeRoom('${escapeHtml(rName)}', event)">🗑️</button>
+      `;
+      row.onclick = () => spyOnRoom(rName);
+      membersList.appendChild(row);
+    });
+  }
+
+  window.spyOnRoom = function(rName) {
+    if (liveQuery) { liveQuery.off(); }
+    if (messagesRef) { messagesRef.off(); }
+    
+    safeRoom = safeId(rName);
+    roomLabel2.textContent = rName;
+    updateHeaderAvatar(rName);
+    
+    messagesRef = window.MYChatNative.wrapRef(db.ref('rooms/' + safeRoom + '/messages'), function(){ return {user: username, room: safeRoom}; });
+    
+    clearChatDOM();
+    emptyMsg.style.display = 'block';
+    emptyMsg.textContent = 'Start of conversation';
+
+    earliestKey = null;
+    hasMoreMessages = true;
+    isLoadingOld = false;
+    
+    attachMessageListeners();
+  };
+
+  window.nukeRoom = function(rName, event) {
+    event.stopPropagation();
+    if(confirm("SUPER ADMIN: Nuke room '" + rName + "' and kick all members?")) {
+      db.ref('rooms/' + safeId(rName) + '/settings/nuke').set(true).then(() => {
+        setTimeout(() => {
+          db.ref('rooms/' + safeId(rName)).remove();
+          if(safeRoom === safeId(rName)) {
+            emptyMsg.style.display = 'block';
+            emptyMsg.textContent = 'Room Destroyed';
+            roomLabel2.textContent = 'Select a room';
+            updateHeaderAvatar('?');
+          }
+        }, 1000); 
+      });
+    }
+  };
+
+  // Upload media to Supabase Storage and return its public URL.
+  async function uploadMediaToSupabase(fileOrBlob, objectPath, contentType) {
+    if (!supabaseClient) {
+      throw new Error('Supabase is not configured. Add your Supabase Project URL and publishable/anon key near the top of this HTML file.');
+    }
+    const uploadOptions = { contentType: contentType || fileOrBlob.type || 'application/octet-stream', upsert: false };
+    const result = await supabaseClient.storage.from(SUPABASE_BUCKET).upload(objectPath, fileOrBlob, uploadOptions);
+    if (result.error) throw result.error;
+    const publicResult = supabaseClient.storage.from(SUPABASE_BUCKET).getPublicUrl(result.data.path);
+    if (!publicResult || !publicResult.data || !publicResult.data.publicUrl) throw new Error('Could not create a public download URL. Check that the bucket is public.');
+    return publicResult.data.publicUrl;
+  }
+
+  // Profile, attachments, voice notes and pinned-message controls.
+  let myProfile = { avatar: localStorage.getItem('mychat_avatar') || '🙂', status: localStorage.getItem('mychat_status') || '' };
+  let pinnedMessageData = null;
+  let memberProfiles = {}; 
+  let mediaRecorder = null, recordedChunks = [];
+  const fileInput = $('mychatFileInput'), attachBtn = $('mychatAttachBtn'), recordBtn = $('mychatRecordBtn');
+  const recordingLabel = $('mychatRecordingLabel'), pinbar = $('mychatPinbar'), pinText = $('mychatPinText'), unpinBtn = $('mychatUnpinBtn');
+  $('mychatProfileBtn').addEventListener('click', async () => {
+    const avatar = prompt('Choose a profile emoji (example: 😎, 🐼, 🚀):', myProfile.avatar);
+    if (avatar === null) return;
+    const status = prompt('Set a short status (optional):', myProfile.status);
+    if (status === null) return;
+    myProfile.avatar = (avatar.trim().slice(0, 8) || '🙂'); myProfile.status = status.trim().slice(0, 60);
+    localStorage.setItem('mychat_avatar', myProfile.avatar); localStorage.setItem('mychat_status', myProfile.status);
+    if (myMemberRef && isOnline) myMemberRef.update({ avatar: myProfile.avatar, status: myProfile.status });
+    $('mychatProfileBtn').textContent = myProfile.avatar;
+    memberProfiles[username] = { avatar: myProfile.avatar, status: myProfile.status };
+    renderMembersFromProfileRefresh();
+  });
+  function renderMembersFromProfileRefresh(){ if(membersRef) membersRef.once('value', snap => renderMembers(snap.val() || {})); }
+  attachBtn.addEventListener('click', () => fileInput.click());
+  fileInput.addEventListener('change', async () => {
+    const file = fileInput.files && fileInput.files[0]; fileInput.value = '';
+    if (!file) return;
+    if (file.size > 8 * 1024 * 1024) { alert('Please choose a file smaller than 8 MB.'); return; }
+    if (!file.type && !/\.(pdf|txt|doc|docx|zip|png|jpe?g|gif|webp)$/i.test(file.name)) { alert('This file type is not supported.'); return; }
+    if (!messagesRef || !isOnline) { alert('File sharing needs an active internet connection and a connected chat room.'); return; }
+    if (!supabaseClient) { alert('Set up Supabase first: add your Project URL and publishable/anon key in the configuration near the top of this HTML file.'); return; }
+    try {
+      attachBtn.disabled = true; attachBtn.textContent = '…';
+      const cleanName = file.name.replace(/[^a-zA-Z0-9._-]/g, '_').slice(0, 100) || 'attachment';
+      const objectPath = 'rooms/' + safeRoom + '/attachments/' + Date.now() + '_' + cleanName;
+      const url = await uploadMediaToSupabase(file, objectPath, file.type || 'application/octet-stream');
+      const isImage = file.type.startsWith('image/');
+      await messagesRef.push({ user: username, text: file.name, type: isImage ? 'image' : 'file', fileUrl: url, fileName: file.name, fileType: file.type || 'application/octet-stream', fileSize: file.size, ts: firebase.database.ServerValue.TIMESTAMP });
+    } catch(err) {
+      console.error('MYChat attachment upload error:', err);
+      alert('File upload failed' + (err && err.code ? ' (' + err.code + ')' : '') + ': ' + (err && err.message ? err.message : 'Unknown error') +
+        '\\n\\nCheck Firebase Storage is enabled, the storageBucket matches your Firebase project, and Storage rules allow this upload.');
+    }
+    finally { attachBtn.disabled = false; attachBtn.textContent = '＋'; }
+  });
+  recordBtn.addEventListener('click', async () => {
+    if (mediaRecorder && mediaRecorder.state === 'recording') {
+      try { mediaRecorder.stop(); } catch (err) { console.error('Could not stop voice recording:', err); }
+      return;
+    }
+    if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia || !window.MediaRecorder) {
+      alert('Voice recording needs a modern browser and a secure page (HTTPS or localhost). If you opened this HTML directly as a file, host it on HTTPS first.');
+      return;
+    }
+    if (!messagesRef || !isOnline) {
+      alert('Voice messages need an active connection and a connected chat room.');
+      return;
+    }
+    if (!supabaseClient) { alert('Set up Supabase first: add your Project URL and publishable/anon key in the configuration near the top of this HTML file.'); return; }
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      recordedChunks = [];
+      const preferredTypes = ['audio/webm;codecs=opus', 'audio/webm', 'audio/mp4'];
+      const supportedType = preferredTypes.find(t => MediaRecorder.isTypeSupported && MediaRecorder.isTypeSupported(t));
+      const recorder = supportedType ? new MediaRecorder(stream, { mimeType: supportedType }) : new MediaRecorder(stream);
+      mediaRecorder = recorder;
+      recorder.ondataavailable = e => { if (e.data && e.data.size) recordedChunks.push(e.data); };
+      recorder.onerror = e => {
+        console.error('MYChat recorder error:', e.error || e);
+        stream.getTracks().forEach(t => t.stop());
+        recordingLabel.classList.remove('active');
+        recordBtn.textContent = '🎙️';
+        alert('Recording failed: ' + ((e.error && e.error.message) || 'The browser could not record audio.'));
+      };
+      recorder.onstop = async () => {
+        stream.getTracks().forEach(t => t.stop());
+        recordingLabel.classList.remove('active');
+        recordBtn.textContent = '🎙️';
+        const mimeType = recorder.mimeType || (recordedChunks[0] && recordedChunks[0].type) || 'audio/webm';
+        const blob = new Blob(recordedChunks, { type: mimeType });
+        if (!blob.size) {
+          alert('No audio was recorded. Allow microphone access and try speaking for a few seconds.');
+          return;
+        }
+        try {
+          recordBtn.disabled = true;
+          const extension = mimeType.includes('mp4') ? 'm4a' : (mimeType.includes('ogg') ? 'ogg' : 'webm');
+          const objectPath = 'rooms/' + safeRoom + '/voice/' + Date.now() + '_' + safeId(username) + '.' + extension;
+          const url = await uploadMediaToSupabase(blob, objectPath, mimeType);
+          await messagesRef.push({ user: username, text: 'Voice message', type: 'audio', fileUrl: url, fileName: 'Voice message', fileType: mimeType, fileSize: blob.size, ts: firebase.database.ServerValue.TIMESTAMP });
+        } catch(err) {
+          console.error('MYChat voice upload error:', err);
+          alert('Voice upload failed' + (err && err.code ? ' (' + err.code + ')' : '') + ': ' + (err && err.message ? err.message : 'Unknown error') +
+            '\\n\\nCheck Firebase Storage is enabled and its rules permit uploads.');
+        } finally { recordBtn.disabled = false; }
+      };
+      recorder.start();
+      recordingLabel.classList.add('active');
+      recordBtn.textContent = '■';
+    } catch(err) {
+      console.error('MYChat microphone error:', err);
+      const detail = err && err.name === 'NotAllowedError' ? 'Microphone permission was denied. Allow microphone access in browser settings.' :
+        err && err.name === 'NotFoundError' ? 'No microphone was found on this device.' :
+        (err && err.message ? err.message : 'Microphone is unavailable.');
+      alert(detail);
+    }
+  });
+  function updatePinnedMessage(data){
+    pinnedMessageData = data || null;
+    if (!pinbar) return;
+    if (!data || !data.id) { pinbar.classList.remove('active'); return; }
+    pinbar.classList.add('active'); pinText.textContent = (data.user || 'User') + ': ' + (data.text || 'Attachment').slice(0, 160);
+    unpinBtn.style.display = roomAdmin === username ? 'inline-flex' : 'none';
+  }
+  if (pinText) pinText.addEventListener('click', () => {
+    if (!pinnedMessageData || !pinnedMessageData.id) return;
+    const target = messagesEl.querySelector('[data-key="' + CSS.escape(pinnedMessageData.id) + '"]');
+    if (target) { target.scrollIntoView({behavior:'smooth', block:'center'}); target.classList.add('is-pinned'); setTimeout(() => target.classList.remove('is-pinned'), 2500); }
+    else alert('The pinned message is not in the currently loaded history yet.');
+  });
+  if (unpinBtn) unpinBtn.addEventListener('click', () => { if(roomAdmin === username && settingsRef && confirm('Unpin this message for everyone?')) settingsRef.child('pinnedMessage').remove(); });
+  window.pinMessage = function(msgKey){
+    if (roomAdmin !== username || !settingsRef) { alert('Only the room admin can pin messages.'); return; }
+    const m = msgMap[msgKey] && msgMap[msgKey]._messageData;
+    if (!m) { alert('Could not find this message.'); return; }
+    settingsRef.child('pinnedMessage').set({ id: msgKey, user: m.user || 'User', text: m.text || m.fileName || 'Attachment', ts: Date.now() });
+  };
+
+  function enterChatUI(){
+    landing.style.display = 'none';
+    chat.style.display = 'block';
+    roomLabel.textContent = roomKey;
+    roomLabel2.textContent = roomKey;
+    try {
+      localStorage.setItem('mychat_username', username);
+      localStorage.setItem('mychat_room', roomKey);
+      if (window.MYChatNative) { if (window.MYChatNative.isNative) { window.MYChatNative.requestPermission(); } window.MYChatNative.setRoom(safeRoom, username); }
+      if (window.MYChatPush && 'Notification' in window && Notification.permission === 'granted') {
+        window.MYChatPush.enable().catch(()=>{});
+      }
+    } catch(_) {}
+    updateHeaderAvatar(roomKey);
+    adminBadge.style.display = (roomAdmin === username) ? 'block' : 'none';
+    clearBtn.style.display = '';
+    
+    lastSeenTimestamp = parseFloat(localStorage.getItem('lastSeen_' + safeRoom)) || 0;
+    unreadDividerInserted = false;
+    
+    clearChatDOM();
+    emptyMsg.style.display = 'block';
+    emptyMsg.textContent = 'Start of conversation';
+
+    earliestKey = null;
+    hasMoreMessages = true;
+    isLoadingOld = false;
+
+    syncViewport();
+    
+    if (window.mychatLastSeenTimer) clearInterval(window.mychatLastSeenTimer);
+    window.mychatLastSeenTimer = setInterval(() => {
+       if(safeRoom && chat.style.display === 'block' && !document.hidden) {
+          localStorage.setItem('lastSeen_' + safeRoom, Date.now());
+       }
+    }, 5000);
+
+    if (!navigator.onLine) {
+        connStatus.textContent = 'Offline (Pending)';
+        connStatus.className = 'subtitle down';
+        loadLocalHistory();
+        return;
+    }
+
+    db.ref('.info/connected').on('value', (snap) => {
+      isOnline = snap.val() === true;
+      if(isOnline){ connStatus.textContent = 'Online'; connStatus.className = 'subtitle live'; } 
+      else { connStatus.textContent = 'Offline (Pending)'; connStatus.className = 'subtitle down'; }
+    });
+
+    settingsRef.child('banned').child(safeId(username)).on('value', snap => {
+      if(snap.val() === true) { alert("You have been kicked from the room by the Admin."); leaveRoom(false); }
+    });
+    
+    settingsRef.child('pinnedMessage').on('value', snap => updatePinnedMessage(snap.val()));
+
+    settingsRef.child('nuke').on('value', snap => {
+      if (snap.val() === true) { alert("This room was deleted by the Server Admin."); leaveRoom(true); }
+    });
+
+    membersRef.on('value', (snap) => {
+      const val = snap.val() || {};
+      currentMembersCount = Object.keys(val).length;
+      renderMembers(val);
+    });
+
+    attachMessageListeners();
+  }
+  
+  function clearChatDOM() {
+    const elementsToRemove = messagesEl.querySelectorAll('.msg-row:not(#typingBubble), .unread-divider');
+    elementsToRemove.forEach(el => el.remove());
+    msgMap = {};
+  }
+  
+  function loadLocalHistory() {
+     const history = JSON.parse(localStorage.getItem('history_' + safeRoom) || '[]');
+     history.forEach(m => {
+         const el = buildMessageElement(m);
+         msgMap[m._key] = el;
+         messagesEl.insertBefore(el, typingBubble);
+     });
+     
+     // Also load local pending messages
+     let pending = JSON.parse(localStorage.getItem('mychat_pending') || '[]');
+     pending.forEach(item => {
+         if(item.room === safeRoom) {
+             const fakeMsg = Object.assign({_key: item.key, isLocal: true}, item.payload);
+             const el = buildMessageElement(fakeMsg);
+             el.classList.add('pending');
+             messagesEl.insertBefore(el, typingBubble);
+             msgMap[item.key] = el;
+         }
+     });
+
+     emptyMsg.style.display = (history.length > 0 || pending.length > 0) ? 'none' : 'block';
+     scrollToBottom();
+  }
+
+  function attachMessageListeners() {
+    liveQuery = messagesRef.orderByKey().limitToLast(PAGE_SIZE);
+    
+    liveQuery.on('child_added', (snap) => {
+      if(!earliestKey) earliestKey = snap.key; 
+      
+      const m = Object.assign({_key: snap.key}, snap.val());
+      
+      // Prevent duplication if loaded from local history
+      if (msgMap[m._key]) return; 
+      
+      // Inject Unread Divider logic
+      if (!unreadDividerInserted && lastSeenTimestamp > 0 && m.ts > lastSeenTimestamp && !m.sys && m.user !== username) {
+         const div = document.createElement('div');
+         div.className = 'unread-divider';
+         div.textContent = 'New Messages';
+         messagesEl.insertBefore(div, typingBubble);
+         unreadDividerInserted = true;
+      }
+      
+      const el = buildMessageElement(m);
+      msgMap[m._key] = el;
+      
+      messagesEl.insertBefore(el, typingBubble);
+      emptyMsg.style.display = 'none';
+      scrollToBottom();
+
+      if (!isSuperAdmin && m.user !== username && !m.sys && !(m.readBy && m.readBy[safeId(username)])) {
+        readObserver.observe(el);
+      }
+      if (m.user !== username && !m.sys && document.hidden) {
+        unreadCount++; document.title = `(${unreadCount}) New Message - MYChat`; alertSound.play().catch(()=>{});
+      }
+
+      if (m.user !== username && !m.sys && document.hidden && window.MYChatNative && window.MYChatNative.isNative) {
+        var nBody = m.type === 'audio' ? '🎙️ Voice message' : m.type === 'image' ? '🖼️ Image' : m.type === 'file' ? '📎 ' + (m.fileName || 'Attachment') : String(m.text || 'New message').slice(0, 160);
+        window.MYChatNative.notify((m.user || 'New message') + ' • MYChat', nBody, safeRoom);
+      }
+
+      // In-page/background-tab notification. This works while the document is
+      // alive. When the app is fully closed, /sw.js + Web Push handles it.
+      if (m.user !== username && !m.sys && document.hidden && 'Notification' in window && Notification.permission === 'granted' && !(window.MYChatNative && window.MYChatNative.pushConfigured)) {
+        try {
+          const title = (m.user || 'New message') + ' • MYChat';
+          const body = m.type === 'audio' ? '🎙️ Voice message' :
+                       m.type === 'image' ? '🖼️ Image' :
+                       m.type === 'file' ? '📎 ' + (m.fileName || 'Attachment') :
+                       String(m.text || 'New message').slice(0, 160);
+          navigator.serviceWorker && navigator.serviceWorker.ready.then(reg => {
+            reg.showNotification(title, {
+              body,
+              tag: 'mychat-' + safeRoom,
+              renotify: true,
+              icon: '/icon-192.png',
+              badge: '/icon-192.png',
+              data: {url: location.href, room: safeRoom, messageKey: m._key},
+              vibrate: [120, 60, 120]
+            }).catch(()=>{});
+          });
+        } catch(_) {}
+      }
+      
+      // Save to local history
+      let hist = JSON.parse(localStorage.getItem('history_' + safeRoom) || '[]');
+      if(!hist.find(x => x._key === m._key)) {
+          hist.push(m);
+          if(hist.length > 50) hist.shift();
+          localStorage.setItem('history_' + safeRoom, JSON.stringify(hist));
+      }
+    });
+
+    messagesRef.on('child_changed', (snap) => {
+      const m = Object.assign({_key: snap.key}, snap.val());
+      
+      // Update local history
+      let hist = JSON.parse(localStorage.getItem('history_' + safeRoom) || '[]');
+      let hIndex = hist.findIndex(x => x._key === m._key);
+      if(hIndex !== -1) { hist[hIndex] = m; localStorage.setItem('history_' + safeRoom, JSON.stringify(hist)); }
+      
+      const oldEl = msgMap[m._key];
+      if(oldEl) {
+        const newEl = buildMessageElement(m);
+        newEl.style.animation = 'none';
+        messagesEl.replaceChild(newEl, oldEl);
+        msgMap[m._key] = newEl;
+      }
+    });
+
+    messagesRef.on('child_removed', (snap) => {
+      // Remove from local history
+      let hist = JSON.parse(localStorage.getItem('history_' + safeRoom) || '[]');
+      hist = hist.filter(x => x._key !== snap.key);
+      localStorage.setItem('history_' + safeRoom, JSON.stringify(hist));
+        
+      const oldEl = msgMap[snap.key];
+      if(oldEl) { oldEl.remove(); delete msgMap[snap.key]; }
+    });
+  }
+
+  // --- Timestamp Swipe Drag Mechanics ---
+  let timeDragStartX = 0;
+  let isDraggingTime = false;
+  
+  messagesEl.addEventListener('touchstart', e => {
+     if(e.target.closest('.msg-bubble')) return; 
+     timeDragStartX = e.touches[0].clientX;
+     isDraggingTime = true;
+  }, {passive: true});
+  messagesEl.addEventListener('touchmove', e => {
+     if(!isDraggingTime) return;
+     const diffX = e.touches[0].clientX - timeDragStartX;
+     if (diffX < -30) { messagesEl.classList.add('show-times'); } 
+     else if (diffX > 30) { messagesEl.classList.remove('show-times'); }
+  }, {passive: true});
+  messagesEl.addEventListener('touchend', () => {
+     isDraggingTime = false;
+     setTimeout(() => messagesEl.classList.remove('show-times'), 2000); 
+  });
+  
+  // Desktop swipe testing
+  messagesEl.addEventListener('mousedown', e => {
+     if(e.target.closest('.msg-bubble')) return;
+     timeDragStartX = e.clientX;
+     isDraggingTime = true;
+  });
+  messagesEl.addEventListener('mousemove', e => {
+     if(!isDraggingTime) return;
+     const diffX = e.clientX - timeDragStartX;
+     if (diffX < -30) messagesEl.classList.add('show-times');
+     else if (diffX > 30) messagesEl.classList.remove('show-times');
+  });
+  messagesEl.addEventListener('mouseup', () => { isDraggingTime = false; setTimeout(() => messagesEl.classList.remove('show-times'), 2000);});
+  messagesEl.addEventListener('mouseleave', () => { isDraggingTime = false; messagesEl.classList.remove('show-times');});
+
+
+  messagesEl.addEventListener('scroll', () => {
+    if (messagesEl.scrollTop <= 10 && !isLoadingOld && hasMoreMessages && earliestKey && isOnline) {
+      loadOlderMessages();
+    }
+  });
+
+  function loadOlderMessages() {
+    isLoadingOld = true;
+    loadingOlder.classList.add('active');
+    
+    messagesRef.orderByKey().endAt(earliestKey).limitToLast(PAGE_SIZE + 1).once('value', snap => {
+      const msgs = [];
+      snap.forEach(child => {
+        if (child.key !== earliestKey) { 
+          msgs.push(Object.assign({_key: child.key}, child.val()));
+        }
+      });
+      
+      if (msgs.length === 0) {
+        hasMoreMessages = false;
+      } else {
+        earliestKey = msgs[0]._key; 
+        const oldScrollHeight = messagesEl.scrollHeight;
+        
+        msgs.reverse().forEach(m => {
+          if (msgMap[m._key]) return; // prevent duplicate
+          const el = buildMessageElement(m);
+          msgMap[m._key] = el;
+          const insertReference = messagesEl.querySelector('.msg-row') || typingBubble;
+          messagesEl.insertBefore(el, insertReference);
+          
+          if (!isSuperAdmin && m.user !== username && !m.sys && !(m.readBy && m.readBy[safeId(username)])) {
+            readObserver.observe(el);
+          }
+        });
+        
+        messagesEl.scrollTop = messagesEl.scrollHeight - oldScrollHeight;
+      }
+      
+      loadingOlder.classList.remove('active');
+      isLoadingOld = false;
+    });
+  }
+
+  const readObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) {
+        const msgKey = entry.target.dataset.key;
+        if(msgKey && messagesRef) {
+          messagesRef.child(msgKey).child('readBy').child(safeId(username)).set(true);
+          observer.unobserve(entry.target);
+        }
+      }
+    });
+  }, { threshold: 0.5 });
+
+  function buildMessageElement(m) {
+    const row = document.createElement('div');
+    row.dataset.key = m._key;
+    row._messageData = m;
+    
+    if(m.sys){
+      row.className = 'msg-row system';
+      row.innerHTML = '<div class="msg-bubble">' + escapeHtml(m.text) + '</div>';
+      return row;
+    }
+    
+    const own = m.user === username;
+    row.className = 'msg-row ' + (own ? 'own' : 'other');
+
+    const isDeleted = m.deleted || m.userDeleted;
+    if (isDeleted && !isSuperAdmin) { row.classList.add('deleted'); }
+    
+    // Add pending style
+    if (m.isLocal || pendingKeys.has(m._key)) { row.classList.add('pending'); }
+
+    let innerHTML = '';
+    if (!own) { const profile = memberProfiles[m.user] || {}; innerHTML += `<div class="member-avatar" style="background:${avatarColor(m.user)}">${escapeHtml(profile.avatar || initials(m.user))}</div><div class="msg-col">`; }
+
+    innerHTML += `<div class="msg-meta"><span class="who ${own?'own':'other'}">${escapeHtml(m.user)}</span></div>`;
+
+    innerHTML += `<div class="msg-bubble" title="Double-click to reply" 
+      ondblclick="setAction('reply', '${m._key}', '${escapeHtml(m.user.replace(/'/g, "\\'"))}', '${escapeHtml(m.text.replace(/'/g, "\\'").replace(/\n/g, ' '))}')" 
+      onclick="this.parentElement${!own?'.parentElement':''}.classList.toggle('show-actions')">`;
+
+    if (isDeleted && !isSuperAdmin) {
+      innerHTML += `<i>🚫 This message was deleted</i>`;
+    } else {
+      if (isDeleted && isSuperAdmin) { innerHTML += `<div style="color:var(--red);font-size:10px;font-weight:bold;margin-bottom:4px;">[DELETED BY USER]</div>`; }
+      
+      if (m.replyTo) {
+        innerHTML += `<div class="quote-box" onclick="document.querySelector('[data-key=\\'${m.replyTo.id}\\']')?.scrollIntoView({behavior:'smooth', block:'center'})"><b>${escapeHtml(m.replyTo.user)}</b><span>${escapeHtml(m.replyTo.text.replace(/\n/g, ' '))}</span></div>`;
+      }
+      
+      if (m.type === 'image' && m.fileUrl) {
+        innerHTML += `<a href="${escapeHtml(m.fileUrl)}" target="_blank" rel="noopener noreferrer"><img class="mychat-file-preview" src="${escapeHtml(m.fileUrl)}" alt="${escapeHtml(m.fileName || 'Shared image')}" loading="lazy"></a>`;
+      } else if (m.type === 'audio' && m.fileUrl) {
+        innerHTML += `<audio controls preload="none" style="display:block;max-width:240px;margin-top:6px" src="${escapeHtml(m.fileUrl)}">Audio playback is not supported.</audio>`;
+      } else if (m.type === 'file' && m.fileUrl) {
+        innerHTML += `<a class="mychat-attachment" href="${escapeHtml(m.fileUrl)}" target="_blank" rel="noopener noreferrer" download="${escapeHtml(m.fileName || 'attachment')}">📎 ${escapeHtml(m.fileName || 'Download file')} <small>${m.fileSize ? (m.fileSize/1024).toFixed(0)+' KB' : ''}</small></a>`;
+      } else { innerHTML += escapeHtml(m.text || ''); }
+      if (m.edited) innerHTML += ` <span style="font-size:10px;opacity:0.5;font-style:italic;">(edited)</span>`;
+      
+      if (own && !isSuperAdmin && m.ts) {
+        const readCount = m.readBy ? Object.keys(m.readBy).length : 0;
+        const allRead = readCount >= (currentMembersCount - 1);
+        innerHTML += `<span class="read-receipt ${allRead ? 'all' : ''}">${readCount > 0 ? '✓✓' : '✓'}</span>`;
+      }
+    }
+    
+    innerHTML += `<div class="swipe-reply-hint">↩️</div>`;
+    innerHTML += `</div>`; 
+
+    if (m.reactions && (!isDeleted || isSuperAdmin)) {
+      innerHTML += `<div class="reaction-badges">`;
+      for (const [emoji, usersObj] of Object.entries(m.reactions)) {
+        const count = Object.keys(usersObj).length;
+        const iReacted = usersObj[safeId(username)];
+        if (count > 0) {
+          innerHTML += `<div class="r-badge ${iReacted ? 'active' : ''}" onclick="toggleReaction('${m._key}', '${emoji}', ${iReacted?true:false})">
+            ${emoji} <span class="r-count">${count > 1 ? count : ''}</span>
+          </div>`;
+        }
+      }
+      innerHTML += `</div>`;
+    }
+
+    if (!isDeleted || isSuperAdmin) {
+      let actionsHTML = `<div class="action-menu" onclick="event.stopPropagation()">`;
+      if (!isDeleted) {
+        actionsHTML += `
+          <div class="react-picker" id="rp-${m._key}">
+            ${EMOJIS.map(e => `<button class="a-btn" onclick="toggleReaction('${m._key}', '${e}', false); closePickers();">${e}</button>`).join('')}
+          </div>
+          <button class="a-btn" title="React" onclick="document.getElementById('rp-${m._key}').classList.toggle('open')">😀</button>
+          <button class="a-btn" title="Reply" onclick="setAction('reply', '${m._key}', '${escapeHtml(m.user.replace(/'/g, "\\'"))}', '${escapeHtml(m.text.replace(/'/g, "\\'").replace(/\n/g, ' '))}')">↩️</button>`;
+      }
+
+      if (own || isSuperAdmin) {
+        actionsHTML += `<button class="a-btn" title="Edit" onclick="setAction('edit', '${m._key}', null, '${escapeHtml(m.text.replace(/'/g, "\\'"))}')">✏️</button>`;
+        if (isSuperAdmin) { actionsHTML += `<button class="a-btn" title="Perm Delete" onclick="permDeleteMessage('${m._key}')">🔥</button>`; } 
+        else { actionsHTML += `<button class="a-btn" title="Delete" onclick="deleteMessage('${m._key}')">🗑️</button>`; }
+      }
+      if (roomAdmin === username && !isDeleted) actionsHTML += `<button class="a-btn" title="Pin for everyone" onclick="pinMessage('${m._key}')">📌</button>`;
+      actionsHTML += `</div>`;
+      innerHTML += actionsHTML;
+    }
+    
+    // Add Timestamp Drawer for iMessage-style swipe
+    innerHTML += `<div class="timestamp-drawer">${m.ts ? fmtTime(m.ts) : 'Pending'}</div>`;
+
+    if (!own) innerHTML += `</div>`; 
+    row.innerHTML = innerHTML;
+    return row;
+  }
+
+  let touchStartX = 0;
+  let touchStartY = 0;
+  let swipingBubble = null;
+  let isSwiping = false;
+
+  messagesEl.addEventListener('touchstart', e => {
+    const bubble = e.target.closest('.msg-bubble');
+    if(!bubble || bubble.closest('.system') || bubble.closest('.typing-indicator-row')) return;
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+    swipingBubble = bubble;
+    isSwiping = false;
+    swipingBubble.style.transition = 'none';
+  }, {passive: true});
+
+  messagesEl.addEventListener('touchmove', e => {
+    if(!swipingBubble) return;
+    const touchCurrentX = e.touches[0].clientX;
+    const touchCurrentY = e.touches[0].clientY;
+    const diffX = touchCurrentX - touchStartX;
+    const diffY = touchCurrentY - touchStartY;
+    
+    if (!isSwiping) {
+      if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 10) {
+         isSwiping = true;
+      } else if (Math.abs(diffY) > 10) {
+         swipingBubble.style.transition = 'transform 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+         swipingBubble = null; 
+         return;
+      }
+    }
+    
+    if (isSwiping) {
+       if (diffX < 0 && diffX > -65) {
+         swipingBubble.style.transform = `translateX(${diffX}px)`;
+         const hint = swipingBubble.querySelector('.swipe-reply-hint');
+         if (hint) {
+           hint.style.opacity = diffX < -45 ? '1' : '0';
+           hint.style.transform = `translateY(-50%) scale(${diffX < -45 ? 1.2 : 1})`;
+         }
+       }
+    }
+  }, {passive: true});
+
+  messagesEl.addEventListener('touchend', e => {
+    if(!swipingBubble) return;
+    const touchCurrentX = e.changedTouches[0].clientX;
+    const diffX = touchCurrentX - touchStartX;
+    
+    if(isSwiping && diffX < -45) {
+      const msgRow = swipingBubble.closest('.msg-row');
+      const replyBtn = msgRow.querySelector('.action-menu button[title="Reply"]');
+      if(replyBtn) replyBtn.click();
+      if (window.navigator && window.navigator.vibrate) window.navigator.vibrate(50);
+    }
+    
+    const hint = swipingBubble.querySelector('.swipe-reply-hint');
+    if (hint) { hint.style.opacity = '0'; hint.style.transform = `translateY(-50%) scale(1)`; }
+    swipingBubble.style.transition = 'transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+    swipingBubble.style.transform = 'translateX(0)';
+    swipingBubble = null;
+    isSwiping = false;
+  });
+
+  window.closePickers = function() { document.querySelectorAll('.react-picker').forEach(p => p.classList.remove('open')); };
+  document.addEventListener('click', closePickers);
+
+  window.toggleReaction = function(msgKey, emoji, currentlyReacted) {
+    if(currentlyReacted) messagesRef.child(msgKey).child('reactions').child(emoji).child(safeId(username)).remove();
+    else messagesRef.child(msgKey).child('reactions').child(emoji).child(safeId(username)).set(true);
+  };
+
+  window.setAction = function(type, id, user, text) {
+    activeAction = { type, id, user, text };
+    actionBanner.classList.add('active');
+    actionBannerType.textContent = type === 'reply' ? 'Replying to' : 'Editing';
+    actionBannerName.textContent = user ? user : 'a message';
+    actionBannerText.textContent = text;
+    
+    if (type === 'edit') { msgInput.value = text; sendBtn.innerHTML = '💾'; }
+    else { msgInput.value = ''; sendBtn.innerHTML = SEND_ICON; }
+    msgInput.focus(); autoGrow();
+    setTimeout(() => scrollToBottom(true), 50);
+  };
+
+  cancelActionBtn.addEventListener('click', cancelAction);
+  function cancelAction() {
+    activeAction = { type: null, id: null, user: null, text: null };
+    actionBanner.classList.remove('active');
+    msgInput.value = ''; sendBtn.innerHTML = SEND_ICON; 
+    autoGrow();
+    setTimeout(() => scrollToBottom(true), 50);
+  }
+
+  window.deleteMessage = function(msgKey) { if(confirm("Delete this message?")) { messagesRef.child(msgKey).update({ userDeleted: true }); } };
+  window.permDeleteMessage = function(msgKey) { if(confirm("SUPER ADMIN: Wipe this message from DB?")) { messagesRef.child(msgKey).remove(); } };
+
+  function sendMessage(){
+    const text = msgInput.value.trim();
+    if(!text) return;
+
+    if (activeAction.type === 'edit' && activeAction.id) {
+      if(isOnline) messagesRef.child(activeAction.id).update({ text: text, edited: true });
+      else alert("Cannot edit messages while offline.");
+    } else {
+      const payload = { user: username, text: text, ts: Date.now() };
+      if (activeAction.type === 'reply') payload.replyTo = { id: activeAction.id, user: activeAction.user, text: activeAction.text };
+      
+      if(isOnline) {
+          payload.ts = firebase.database.ServerValue.TIMESTAMP;
+          const newRef = messagesRef.push();
+          newRef.set(payload);
+      } else {
+          // Offline LocalStorage Persistence
+          let pending = JSON.parse(localStorage.getItem('mychat_pending') || '[]');
+          const localKey = 'local_' + Date.now() + '_' + Math.random().toString(36).substr(2,5);
+          pending.push({ room: safeRoom, key: localKey, payload: payload });
+          localStorage.setItem('mychat_pending', JSON.stringify(pending));
+          
+          const fakeMsg = Object.assign({_key: localKey, isLocal: true}, payload);
+          const el = buildMessageElement(fakeMsg);
+          el.classList.add('pending');
+          messagesEl.insertBefore(el, typingBubble);
+          msgMap[localKey] = el;
+          scrollToBottom();
+      }
+    }
+    
+    if(myMemberRef && isOnline) myMemberRef.update({ typing: false });
+    cancelAction(); scrollToBottom();
+  }
+
+  sendBtn.addEventListener('click', sendMessage);
+  let typingTimer;
+  msgInput.addEventListener('keydown', (e) => { if(e.key === 'Enter' && !e.shiftKey){ e.preventDefault(); sendMessage(); } });
+  
+  msgInput.addEventListener('input', () => {
+    autoGrow();
+    if(myMemberRef && isOnline) myMemberRef.update({ typing: true });
+    clearTimeout(typingTimer);
+    typingTimer = setTimeout(() => { if(myMemberRef && isOnline) myMemberRef.update({ typing: false }); }, 1500);
+  });
+  
+  function autoGrow(){ 
+    msgInput.style.height = '1px'; 
+    msgInput.style.height = Math.min(msgInput.scrollHeight, 140) + 'px'; 
+  }
+
+  window.kickUser = function(userToKick) {
+    if(confirm(`Kick ${userToKick} from the room?`)) {
+      settingsRef.child('banned').child(safeId(userToKick)).set(true);
+      membersRef.child(safeId(userToKick)).remove();
+    }
+  };
+
+  function renderMembers(members){
+    const entries = Object.entries(members).sort((a,b) => a[0].localeCompare(b[0]));
+    onlineCount.textContent = entries.length + ' online';
+    membersList.innerHTML = '';
+    
+    let typers = [];
+    let onlineNames = [];
+
+    entries.forEach(([safeName, data]) => {
+      const name = data.name || safeName;
+      const joinTs = data.ts;
+      const memberAvatar = data.avatar || initials(name);
+      memberProfiles[name] = { avatar: memberAvatar, status: data.status || '' };
+      const memberStatus = data.status || ''; 
+      
+      // FIX: Only add OTHER users to the header's online list
+      if (name !== username) {
+        onlineNames.push(name);
+      }
+      
+      if (data.typing && name !== username) typers.push(name);
+
+      const row = document.createElement('div');
+      row.className = 'member-row';
+      row.innerHTML =
+        `<div class="member-avatar" style="background:${avatarColor(name)}">${escapeHtml(memberAvatar)}</div>
+        <div style="display:flex; flex-direction:column; flex:1; min-width:0;">
+          <div class="member-name ${name === username ? 'me' : ''}">
+            ${escapeHtml(name)} ${name === username ? '(you)' : ''} 
+            ${name === roomAdmin ? '👑' : ''}
+          </div>
+          <div style="font-size:10px; color:var(--text-dim); margin-top:2px;">${memberStatus ? escapeHtml(memberStatus) : 'Joined ' + escapeHtml(fmtTime(joinTs))}</div>
+        </div>
+        ${(roomAdmin === username && name !== username) ? `<button class="kick-btn" onclick="kickUser('${escapeHtml(name)}')">KICK</button>` : ''}
+        <div class="member-status"></div>`;
+      membersList.appendChild(row);
+    });
+
+    const topOnlineEl = document.getElementById('topOnlineUsers');
+    if (topOnlineEl && !isSuperAdmin) {
+      if (onlineNames.length > 0) {
+        topOnlineEl.textContent = 'Online: ' + onlineNames.join(', ');
+      } else {
+        topOnlineEl.textContent = 'Online: Just you';
+      }
+    }
+
+    if (typers.length > 0) {
+      typingName.textContent = typers.join(', ') + (typers.length > 1 ? ' are typing...' : ' is typing...');
+      typingBubble.classList.add('active');
+      scrollToBottom();
+    } else { 
+      typingBubble.classList.remove('active'); 
+    }
+  }
+
+  function scrollToBottom(smooth = false){
+    requestAnimationFrame(() => {
+      if(smooth) messagesEl.scrollTo({ top: messagesEl.scrollHeight, behavior: 'smooth' });
+      else messagesEl.scrollTop = messagesEl.scrollHeight;
+    });
+  }
+  function syncViewport(){
+    if(window.visualViewport){ appEl.style.height = `${window.visualViewport.height}px`; appEl.style.top = `${window.visualViewport.offsetTop}px`; window.scrollTo(0, 0); }
+    if(chat.style.display === 'block') scrollToBottom();
+  }
+  if(window.visualViewport){
+    window.visualViewport.addEventListener('resize', syncViewport); window.visualViewport.addEventListener('scroll', syncViewport);
+  } else { window.addEventListener('resize', syncViewport); }
+  msgInput.addEventListener('focus', () => { setTimeout(syncViewport, 150); setTimeout(() => scrollToBottom(true), 250); });
+
+  leaveBtn.addEventListener('click', () => leaveRoom(false));
+  
+  $('menuToggle').addEventListener('click', () => { sidebar.classList.toggle('open'); scrim.classList.toggle('open'); });
+  
+  function leaveRoom(isNuked = false){
+    try{ window.MYChatNative.leaveRoom(); }catch(_){}
+    if (safeRoom) localStorage.setItem('lastSeen_' + safeRoom, Date.now());
+    
+    if (!isSuperAdmin && !isNuked && isOnline) {
+      if(messagesRef) messagesRef.push({ sys:true, user:'', text: username + ' left the room', ts: firebase.database.ServerValue.TIMESTAMP });
+      if(myMemberRef) myMemberRef.remove();
+    }
+    
+    if(isSuperAdmin) { db.ref('rooms').off(); }
+    if(liveQuery) { liveQuery.off(); }
+    if(messagesRef) messagesRef.off();
+    if(membersRef) membersRef.off();
+    if(settingsRef) { settingsRef.child('banned').child(safeId(username)).off(); settingsRef.child('nuke').off(); }
+    
+    isSuperAdmin = false;
+    if (window.mychatLastSeenTimer) { clearInterval(window.mychatLastSeenTimer); window.mychatLastSeenTimer = null; }
+    document.querySelector('.members-label').textContent = 'MEMBERS';
+    adminBadge.style.display = 'none';
+    
+    const topOnlineEl = document.getElementById('topOnlineUsers');
+    if (topOnlineEl) topOnlineEl.textContent = '';
+
+    chat.style.display = 'none'; landing.style.display = 'flex';
+    connectBtn.disabled = false; connectBtn.textContent = 'CONNECT →';
+    // Keep the app's quick-join defaults so the user can reconnect with one tap.
+    roomInput.value = '2425'; usernameInput.value = '@';
+    username = ''; roomKey = ''; safeRoom = '';
+    sidebar.classList.remove('open'); scrim.classList.remove('open');
+    joinCard.style.transform = 'rotateX(0) rotateY(0)';
+    joinCard.classList.remove('rotY90', 'rotYneg90');
+    stepUsername.classList.add('hidden'); stepRoom.classList.remove('hidden');
+    connectBtn.disabled = false; connectBtn.textContent = 'CONNECT →';
+    cancelAction();
+  }
+
+  clearBtn.addEventListener('click', () => {
+    if(!confirm('Clear all messages in this room for everyone?')) return;
+    messagesRef.remove().then(() => messagesRef.push({ sys:true, user:'', text: 'Chat cleared by ' + username, ts: firebase.database.ServerValue.TIMESTAMP }));
+  });
+
+  scrim.addEventListener('click', () => { sidebar.classList.remove('open'); scrim.classList.remove('open'); });
+
+  window.startCanvasAnimation = function(){
+     isAnimRunning = true;
+     initBgAnimation();
+  };
+
+  function initBgAnimation(){
+    const canvas = $('bgCanvas'); const ctx = canvas.getContext('2d'); let w, h, dpr, particles = [];
+    const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    
+    let mouseX = -1000; let mouseY = -1000;
+    document.addEventListener('mousemove', e => { mouseX = e.clientX; mouseY = e.clientY; });
+    document.addEventListener('mouseleave', () => { mouseX = -1000; mouseY = -1000; });
+    
+    function resize(){
+      dpr = Math.min(window.devicePixelRatio || 1, 2); w = window.innerWidth; h = window.innerHeight;
+      canvas.width = w * dpr; canvas.height = h * dpr; canvas.style.width = w + 'px'; canvas.style.height = h + 'px';
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0); 
+      
+      // OPTIMIZATION: Reduce max particles slightly on large tablet screens to ensure 60fps
+      const isTablet = w <= 1024;
+      const count = Math.min(isTablet ? 45 : 80, Math.round((w * h) / (isTablet ? 25000 : 15000)));
+      
+      const isDark = document.documentElement.classList.contains('dark-mode');
+      const colors = isDark ? ['#333333', '#555555', '#777777', '#aaaaaa'] : ['#6366F1', '#EC4899', '#06B6D4', '#ffffff']; 
+      
+      particles = Array.from({length: count}, () => ({ 
+        x: Math.random() * w, y: Math.random() * h, 
+        vx: (Math.random() - 0.5) * 0.8, vy: (Math.random() - 0.5) * 0.8, 
+        r: 1.5 + Math.random() * 2,
+        color: colors[Math.floor(Math.random() * colors.length)]
+      }));
+    }
+    
+    function step(){
+      if(!isAnimRunning) return;
+      ctx.clearRect(0, 0, w, h);
+      
+      const isDark = document.documentElement.classList.contains('dark-mode');
+      const isTablet = w <= 1024;
+      
+      particles.forEach(p => {
+        const dxMouse = mouseX - p.x; const dyMouse = mouseY - p.y;
+        const distMouse = Math.sqrt(dxMouse * dxMouse + dyMouse * dyMouse);
+        if (distMouse < 200) {
+          p.vx += (dxMouse / distMouse) * 0.02;
+          p.vy += (dyMouse / distMouse) * 0.02;
+        }
+        
+        const speed = Math.sqrt(p.vx*p.vx + p.vy*p.vy);
+        if(speed > 2) { p.vx = (p.vx/speed)*2; p.vy = (p.vy/speed)*2; }
+
+        p.x += p.vx; p.y += p.vy; 
+        
+        if(p.x < 0 || p.x > w) p.vx *= -1; if(p.y < 0 || p.y > h) p.vy *= -1;
+        
+        ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2); 
+        ctx.fillStyle = p.color;
+        
+        // OPTIMIZATION: Disable expensive shadowBlur rendering on tablets
+        if (!isTablet) {
+          ctx.shadowBlur = 15; 
+          ctx.shadowColor = p.color;
+        }
+        
+        ctx.fill(); 
+        
+        if (!isTablet) {
+          ctx.shadowBlur = 0; 
+        }
+      });
+      
+      const maxDist = 180;
+      const maxDistSq = maxDist * maxDist; // OPTIMIZATION: Squared distance for rendering speed loop
+      
+      for(let i = 0; i < particles.length; i++){
+        for(let j = i + 1; j < particles.length; j++){
+          const a = particles[i], b = particles[j], dx = a.x - b.x, dy = a.y - b.y;
+          const distSq = dx*dx + dy*dy;
+          
+          if(distSq < maxDistSq){ 
+            const dist = Math.sqrt(distSq); // Only calc sqrt if definitely in range
+            ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); 
+            ctx.strokeStyle = isDark ? `rgba(255, 255, 255, ${0.1 * (1 - dist / maxDist)})` : `rgba(255, 255, 255, ${0.2 * (1 - dist / maxDist)})`; 
+            ctx.lineWidth = 1.5; ctx.stroke(); 
+          }
+        }
+      }
+      if(!reduceMotion) requestAnimationFrame(step);
+    }
+    resize(); window.addEventListener('resize', resize); window.addEventListener('orientationchange', () => setTimeout(resize, 200));
+    if(reduceMotion){ step(); } else { requestAnimationFrame(step); }
+  }
+  
+  initBgAnimation();
+})();
+</script>
+
+<!-- PWA / Push controls -->
+<div id="pwaControls" style="position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:9999;display:none;gap:8px;flex-direction:column;align-items:stretch;">
+  <button id="pwaInstallBtn" type="button" style="display:none;background:#4A44D4;color:#fff;border:none;border-radius:999px;padding:12px 20px;font-family:'Poppins',sans-serif;font-weight:600;font-size:14px;box-shadow:0 10px 25px -5px rgba(74,68,212,0.5);cursor:pointer;">⬇ Install App</button>
+  <button id="pushEnableBtn" type="button" style="display:none;background:#111827;color:#fff;border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:10px 18px;font-family:'Poppins',sans-serif;font-weight:600;font-size:13px;cursor:pointer;">🔔 Enable Notifications</button>
+</div>
+
+<script>
+(function(){
+  'use strict';
+
+  /*
+   * MYChat PWA + Web Push
+   * ---------------------
+   * IMPORTANT WEB PLATFORM LIMIT:
+   * A production Web Push service worker MUST be served as a same-origin
+   * JavaScript file (normally /sw.js). Browsers do not allow a service worker
+   * to be registered from a Blob/data URL. Therefore this HTML registers
+   * /sw.js when it exists, while keeping the app itself in this single HTML.
+   *
+   * Set PUSH_VAPID_PUBLIC_KEY to your Web Push VAPID public key.
+   * Set PUSH_SUBSCRIBE_ENDPOINT to your server endpoint that stores the
+   * subscription and sends Web Push messages.
+   */
+  const PUSH_VAPID_PUBLIC_KEY = window.MYCHAT_VAPID_PUBLIC_KEY || '';
+  const PUSH_SUBSCRIBE_ENDPOINT = window.MYCHAT_PUSH_SUBSCRIBE_ENDPOINT || '/api/push/subscribe';
+  const PUSH_SERVICE_WORKER_URL = '/sw.js';
+
+  const controls = document.getElementById('pwaControls');
+  const installBtn = document.getElementById('pwaInstallBtn');
+  const pushBtn = document.getElementById('pushEnableBtn');
+  let deferredPrompt = null;
+  let swRegistration = null;
+
+  function b64ToUint8Array(base64String){
+    const padding = '='.repeat((4 - base64String.length % 4) % 4);
+    const base64 = (base64String + padding).replace(/-/g, '+').replace(/_/g, '/');
+    const raw = atob(base64);
+    return Uint8Array.from([...raw].map(c => c.charCodeAt(0)));
+  }
+
+  function isStandalone(){
+    return window.matchMedia('(display-mode: standalone)').matches ||
+           window.navigator.standalone === true;
+  }
+
+  function showControls(){
+    if (!isStandalone()) controls.style.display = 'flex';
+  }
+
+  async function registerPushServiceWorker(){
+    if (!('serviceWorker' in navigator)) return null;
+    if (!window.isSecureContext) {
+      console.warn('MYChat Push: HTTPS (or localhost) is required.');
+      return null;
+    }
+    try{
+      swRegistration = await navigator.serviceWorker.register(PUSH_SERVICE_WORKER_URL, {scope:'/'});
+      await navigator.serviceWorker.ready;
+      return swRegistration;
+    }catch(err){
+      console.warn('MYChat Push: /sw.js could not be registered.', err);
+      return null;
+    }
+  }
+
+  async function enablePushNotifications(){
+    if (window.MYChatNative && window.MYChatNative.pushConfigured && !window.MYChatNative.isNative) { return window.MYChatNative.requestPermission(); }
+    if (!('Notification' in window)) {
+      alert('This browser does not support web notifications.');
+      return;
+    }
+    if (!window.isSecureContext) {
+      alert('Notifications require HTTPS (localhost is also allowed for development).');
+      return;
+    }
+
+    const permission = await Notification.requestPermission();
+    if(permission !== 'granted'){
+      pushBtn.textContent = permission === 'denied' ? '🔕 Notifications Blocked' : '🔔 Enable Notifications';
+      return;
+    }
+
+    const registration = swRegistration || await registerPushServiceWorker();
+    if(!registration){
+      alert('Push needs a same-origin /sw.js service worker. The HTML is ready for it, but the service worker file must be deployed beside this HTML.');
+      return;
+    }
+
+    if(!('PushManager' in window)){
+      alert('This browser does not support the Web Push API.');
+      return;
+    }
+
+    if(!PUSH_VAPID_PUBLIC_KEY){
+      alert('Notification permission is enabled. To receive messages while MYChat is closed, configure your Web Push VAPID public key and push server endpoint in the HTML.');
+      pushBtn.textContent = '✅ Notifications Allowed';
+      return;
+    }
+
+    try{
+      let subscription = await registration.pushManager.getSubscription();
+      if(!subscription){
+        subscription = await registration.pushManager.subscribe({
+          userVisibleOnly: true,
+          applicationServerKey: b64ToUint8Array(PUSH_VAPID_PUBLIC_KEY)
+        });
+      }
+
+      localStorage.setItem('mychat_push_subscription', JSON.stringify(subscription));
+
+      // Send the subscription to the application server. The server must
+      // associate it with the current MYChat username/room and use Web Push
+      // with its private VAPID key when a new message is created.
+      if(PUSH_SUBSCRIBE_ENDPOINT){
+        const identity = {
+          username: localStorage.getItem('mychat_username') || '',
+          room: localStorage.getItem('mychat_room') || ''
+        };
+        const response = await fetch(PUSH_SUBSCRIBE_ENDPOINT, {
+          method:'POST',
+          headers:{'Content-Type':'application/json'},
+          body:JSON.stringify({subscription, identity})
+        });
+        if(!response.ok) throw new Error('Push subscription server returned HTTP ' + response.status);
+      }
+
+      pushBtn.textContent = '✅ Notifications On';
+      pushBtn.disabled = true;
+    }catch(err){
+      console.error('MYChat Push subscription error:', err);
+      alert('Could not finish push setup: ' + (err.message || err));
+    }
+  }
+
+  // Browser install prompt.
+  window.addEventListener('beforeinstallprompt', e => {
+    e.preventDefault();
+    deferredPrompt = e;
+    showControls();
+    installBtn.style.display = 'block';
+  });
+
+  installBtn.addEventListener('click', async () => {
+    if(!deferredPrompt) return;
+    deferredPrompt.prompt();
+    try { await deferredPrompt.userChoice; } catch(_) {}
+    deferredPrompt = null;
+    installBtn.style.display = 'none';
+  });
+
+  window.addEventListener('appinstalled', () => {
+    deferredPrompt = null;
+    installBtn.style.display = 'none';
+  });
+
+  // iOS has no beforeinstallprompt.
+  const isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent) && !window.MSStream;
+  if(isIOS && !isStandalone()){
+    showControls();
+    installBtn.style.display = 'block';
+    installBtn.textContent = '⬇ Add to Home Screen';
+    installBtn.onclick = () => alert('To install MYChat: tap Share → Add to Home Screen.');
+  }
+
+  pushBtn.addEventListener('click', enablePushNotifications);
+
+  // Register the real same-origin service worker early. It handles push while
+  // the page is backgrounded/closed. The HTML itself cannot replace /sw.js.
+  if('serviceWorker' in navigator && window.isSecureContext){
+    registerPushServiceWorker().then(reg => {
+      if(reg && 'Notification' in window && Notification.permission === 'granted'){
+        pushBtn.style.display = 'block';
+      }
+    });
+  }
+
+  // Expose a small API so the existing MYChat code can enable notifications
+  // after the user joins a room.
+  window.MYChatPush = {
+    enable: enablePushNotifications,
+    registration: () => swRegistration,
+    isSupported: () => ('serviceWorker' in navigator && 'PushManager' in window && 'Notification' in window)
+  };
+
+  // Show push control on the login screen when notifications are available.
+  if('Notification' in window){
+    showControls();
+    if(Notification.permission !== 'granted'){
+      pushBtn.style.display = 'block';
+    }
+  }
+})();
+</script>
+
+<script>
+/* MYChat usability upgrades: in-room search, keyboard shortcuts and local draft recovery. */
+(function(){
+  'use strict';
+  const $ = id => document.getElementById(id);
+  const toggle = $('mychatSearchToggle'), panel = $('mychatSearchPanel');
+  const searchInput = $('mychatSearchInput'), count = $('mychatSearchCount');
+  const nextBtn = $('mychatSearchNext'), closeBtn = $('mychatSearchClose');
+  const messages = $('messages'), composerInput = $('msgInput'), send = $('sendBtn');
+  if (!toggle || !panel || !searchInput || !messages || !composerInput) return;
+  let matches = [], active = -1;
+  const roomCode = '2425';
+  const draftKey = 'mychat_draft_' + roomCode;
+
+  function clearMarks(){
+    messages.querySelectorAll('.mychat-search-match,.mychat-search-current').forEach(el=>el.classList.remove('mychat-search-match','mychat-search-current'));
+  }
+  function runSearch(shouldFocus=true){
+    const previous = matches[active];
+    clearMarks();
+    const q = searchInput.value.trim().toLocaleLowerCase();
+    matches = q ? Array.from(messages.querySelectorAll('.msg-row:not(.typing-indicator-row)')).filter(el=>el.textContent.toLocaleLowerCase().includes(q)) : [];
+    matches.forEach(el=>el.classList.add('mychat-search-match'));
+    active = matches.length ? (previous && matches.includes(previous) ? matches.indexOf(previous) : 0) : -1;
+    if(active >= 0 && shouldFocus) focusMatch();
+    else if(active >= 0) count.textContent = (active+1) + ' / ' + matches.length;
+    else count.textContent = q ? '0 results' : 'Search';
+  }
+  function focusMatch(){
+    clearMarks();
+    matches.forEach(el=>el.classList.add('mychat-search-match'));
+    if(active < 0 || !matches[active]) return;
+    const el=matches[active]; el.classList.add('mychat-search-current');
+    el.scrollIntoView({behavior:'smooth',block:'center'});
+    count.textContent=(active+1)+' / '+matches.length;
+  }
+  function nextMatch(){
+    if(!matches.length){runSearch();return;}
+    active=(active+1)%matches.length; focusMatch();
+  }
+  function openSearch(){panel.classList.add('open'); searchInput.focus(); searchInput.select(); runSearch();}
+  function closeSearch(){panel.classList.remove('open');searchInput.value='';clearMarks();matches=[];active=-1;count.textContent='0 results';}
+  toggle.addEventListener('click',()=>panel.classList.contains('open')?closeSearch():openSearch());
+  closeBtn.addEventListener('click',closeSearch);
+  nextBtn.addEventListener('click',nextMatch);
+  searchInput.addEventListener('input',runSearch);
+  searchInput.addEventListener('keydown',e=>{
+    if(e.key==='Enter'){e.preventDefault(); if(matches.length) nextMatch(); else runSearch();}
+    if(e.key==='Escape'){e.preventDefault();closeSearch();}
+  });
+  document.addEventListener('keydown',e=>{
+    const isFind=(e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='f';
+    if(isFind && $('chat') && getComputedStyle($('chat')).display!=='none'){e.preventDefault();openSearch();}
+    if(e.key==='Escape' && panel.classList.contains('open') && document.activeElement!==searchInput) closeSearch();
+  });
+  // Keep the search result set fresh as live messages arrive or change.
+  const messageObserver = new MutationObserver(()=>{if(panel.classList.contains('open') && searchInput.value.trim()) runSearch(false);});
+  messageObserver.observe(messages,{childList:true,subtree:true,characterData:true});
+
+  // Restore a room-specific draft on first entry and persist edits locally.
+  let draftRestored=false;
+  const restoreDraft=()=>{
+    if(draftRestored || !$('chat') || getComputedStyle($('chat')).display==='none') return;
+    draftRestored=true;
+    try{const saved=localStorage.getItem(draftKey);if(saved && !composerInput.value){composerInput.value=saved;composerInput.dispatchEvent(new Event('input',{bubbles:true}));}}catch(_e){}
+  };
+  composerInput.addEventListener('input',()=>{try{if(composerInput.value) localStorage.setItem(draftKey,composerInput.value);else localStorage.removeItem(draftKey);}catch(_e){}});
+  // The app's send handler clears the composer synchronously; clear its saved draft after it runs.
+  if(send) send.addEventListener('click',()=>setTimeout(()=>{if(!composerInput.value)try{localStorage.removeItem(draftKey);}catch(_e){}},0));
+  composerInput.addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.shiftKey)setTimeout(()=>{if(!composerInput.value)try{localStorage.removeItem(draftKey);}catch(_e){}},0);});
+  const chatObserver=new MutationObserver(restoreDraft);
+  chatObserver.observe($('chat'),{attributes:true,attributeFilter:['style','class']});
+  restoreDraft();
+})();
+</script>
+</body>
+</html>

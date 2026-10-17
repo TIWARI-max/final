@@ -1,0 +1,13 @@
+{
+  "appId": "com.mychat.app",
+  "appName": "MYChat",
+  "webDir": "www",
+  "android": {
+    "allowMixedContent": false
+  },
+  "plugins": {
+    "CapacitorHttp": {
+      "enabled": true
+    }
+  }
+}
